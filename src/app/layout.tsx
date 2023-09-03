@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Ubuntu } from 'next/font/google'
 
-import "./style/global.scss"
+import './style/global.scss'
 
-const inter = Inter({ subsets: ['latin'] })
+const ubuntu = Ubuntu({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,9 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={ubuntu.className}>{children}</body>
     </html>
   )
 }
