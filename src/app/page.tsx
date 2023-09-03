@@ -1,7 +1,8 @@
 import "./style/global.scss"
+import MainPage from "@/page/main-page";
 
 export default function Home() {
   return (
-    <div><h1>hui</h1></div>
+    <MainPage/>
   )
 }
