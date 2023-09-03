@@ -1,9 +1,14 @@
-import React from 'react';
+import Header from '@/widgets/header/header'
+import React from 'react'
 
 const ManiPage = () => {
   return (
-    <div><h1>huiasf</h1></div>
-  );
-};
+    <div>
+      <Header />
 
-export default ManiPage;
+      <h1>huiasf</h1>
+    </div>
+  )
+}
+
+export default ManiPage
