@@ -1,0 +1,68 @@
+@import '../../app/style/variable.scss';
+
+.logo {
+  width: 130px;
+  height: 22px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+
+  .navigation {
+    display: flex;
+    flex-grow: 1;
+    max-width: 637px;
+    justify-content: space-between;
+
+    nav {
+      flex-grow: 1;
+      max-width: 447px;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+
+  .contacts {
+    display: flex;
+    gap: 36px;
+
+    .contact {
+      display: flex;
+      gap: 12px;
+    }
+
+    .title {
+      color: $gray-800;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+    }
+
+    .text {
+      color: $gray-900;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  a {
+    color: $gray-800;
+    font-weight: 700;
+    line-height: 25.6px;
+  }
+}
