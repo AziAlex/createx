@@ -1,0 +1,9 @@
+.wrap {
+  width: 100%;
+
+  &  > div {
+    margin: auto;
+    width: 100%;
+    max-width: 1230px;
+  }
+}

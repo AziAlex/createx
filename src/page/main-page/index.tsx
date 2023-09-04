@@ -1,4 +1,4 @@
-import Header from '@/widgets/header/header'
+import Header from '@/widgets/header'
 import React from 'react'
 import Slider from "react-slick";
 import MainSlider from "@/feature/main-slider";
