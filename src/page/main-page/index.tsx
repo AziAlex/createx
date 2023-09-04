@@ -1,13 +1,14 @@
 import Header from '@/widgets/header/header'
 import React from 'react'
+import Slider from "react-slick";
+import MainSlider from "@/feature/main-slider";
 
 const ManiPage = () => {
   return (
-    <div>
+    <>
       <Header />
-
-      <h1>huiasf</h1>
-    </div>
+      <MainSlider/>
+    </>
   )
 }
 
