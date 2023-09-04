@@ -1,8 +1,8 @@
 import React, {FC} from 'react';
 
-import {IconPhone} from "@/shared/svg/Icon";
+import {IconArrow, IconPhone} from "@/shared/svg/Icon";
 
-export type IconName = "phone"
+export type IconName = "phone" | "arrow"
 
 interface Iprops {
   name: IconName
@@ -12,7 +12,8 @@ interface Iprops {
 
 const Icon: FC<Iprops> = ({name, className}) => {
   const icons: { [key: string]: React.ReactNode } = {
-    phone: <IconPhone className={className}/>
+    phone: <IconPhone className={className}/>,
+    arrow: <IconArrow className={className}/>
   }
 
   return <>{icons[name]}</>

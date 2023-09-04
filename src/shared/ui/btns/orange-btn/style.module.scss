@@ -1,0 +1,12 @@
+@import "@/var";
+
+.button {
+  padding: 10px 40px;
+  background-color: $orange;
+  border-radius: 4px;
+  border: 1px solid $orange;
+
+  &:hover {
+    //background-color: ;
+  }
+}

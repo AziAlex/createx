@@ -1,9 +1,15 @@
-import React from 'react';
+import Header from '@/widgets/header'
+import React from 'react'
+import Slider from "react-slick";
+import MainSlider from "@/feature/main-slider";
 
 const ManiPage = () => {
   return (
-    <div><h1>huiasf</h1></div>
-  );
-};
+    <>
+      <Header />
+      <MainSlider/>
+    </>
+  )
+}
 
-export default ManiPage;
+export default ManiPage
