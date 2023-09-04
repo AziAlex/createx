@@ -1,0 +1,14 @@
+.sliderItem {
+  height: calc(100vh - 92px);
+  background-color: red;
+
+  div {
+    display: flex;
+
+    button:first-child {
+      padding: 10px 40px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+    }
+  }
+}
