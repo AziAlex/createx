@@ -1,22 +1,32 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react'
 
-import {IconArrow, IconPhone} from "@/shared/svg/Icon";
+import {
+  IconArrow,
+  IconChat,
+  IconClose,
+  IconLogo,
+  IconMenu,
+  IconPhone,
+} from '@/shared/svg/Icon'
 
-export type IconName = "phone" | "arrow"
+export type IconName = 'arrow' | 'chat' | 'close' | 'logo' | 'menu' | 'phone'
 
 interface Iprops {
   name: IconName
   className: string
 }
 
-
-const Icon: FC<Iprops> = ({name, className}) => {
+const Icon: FC<Iprops> = ({ name, className }) => {
   const icons: { [key: string]: React.ReactNode } = {
-    phone: <IconPhone className={className}/>,
-    arrow: <IconArrow className={className}/>
+    arrow: <IconArrow className={className} />,
+    chat: <IconChat className={className} />,
+    close: <IconClose className={className} />,
+    logo: <IconLogo className={className} />,
+    menu: <IconMenu className={className} />,
+    phone: <IconPhone className={className} />,
   }
 
   return <>{icons[name]}</>
-};
+}
 
-export default Icon;
+export default Icon
