@@ -1,2 +1,6 @@
-export * from "./ui/IconPhone"
 export * from "./ui/IconArrow"
+export * from "./ui/IconChat"
+export * from "./ui/IconClose"
+export * from "./ui/IconLogo"
+export * from "./ui/IconMenu"
+export * from "./ui/IconPhone"
