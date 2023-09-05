@@ -22,7 +22,7 @@
       color: #fff;
 
       span {
-        color: $orange;
+        color: $btn;
       }
     }
 
@@ -40,12 +40,13 @@
       gap: 24px;
 
       button:first-child {
-        padding: 10px 40px;
         border: 1px solid #fff;
-        border-radius: 4px;
         color: #fff;
-        background: transparent;
-        cursor: pointer;
+
+        &:hover {
+          background-color: $btn;
+          border: 1px solid $btn;
+        }
       }
     }
   }
