@@ -49,6 +49,7 @@
       max-width: none;
     }
   }
+
   @media (max-width: 700px) {
     flex-direction: row-reverse;
   }
@@ -69,6 +70,12 @@
     .contact {
       display: flex;
       gap: 12px;
+
+      .svg {
+        width: 40px;
+        height: 40px;
+        fill: $btn-hover;
+      }
     }
 
     .title {

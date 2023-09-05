@@ -1,4 +1,4 @@
-import { links } from '../../lib/constants'
+import {links} from '../../lib/constants'
 import Icon from '@/shared/svg'
 
 import cl from './style.module.scss'
@@ -12,14 +12,14 @@ const Menu = () => (
       className={cl.menu__checkbox}
     />
     <label className={cl.menu__toggle} htmlFor="menu">
-      <Icon name="menu" className={cl.menu__icon} />
+      <Icon name="menu" className={cl.menu__icon}/>
     </label>
     <label className={cl.menu__overlay} htmlFor="menu"></label>
 
     <div className={cl.menu}>
       <div className={cl.menu__header}>
         <label className={cl.menu__toggle} htmlFor="menu">
-          <Icon name="close" className={cl.menu__icon} />
+          <Icon name="cross" className={cl.menu__icon}/>
         </label>
         <span>MENU</span>
       </div>

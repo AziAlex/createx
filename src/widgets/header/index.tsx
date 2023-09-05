@@ -1,19 +1,16 @@
-import { IconPhone } from '@/shared/svg/Icon'
-import { IconChat } from '@/shared/svg/ui/IconChat'
-import { IconLogo } from '@/shared/svg/ui/IconLogo'
-import { links } from '@/widgets/header/lib/constants'
-
-import cl from './style.module.scss'
+import {links} from '@/widgets/header/lib/constants'
 import Wrap from '@/shared/ui/wrap'
 import Menu from './ui/menu'
 import Icon from '@/shared/svg'
+
+import cl from './style.module.scss'
 
 const Header = () => (
   <Wrap>
     <div className={cl.header}>
       <div className={cl.navigation}>
         <div>
-          <IconLogo className={cl.logo} />
+          <Icon name="logo" className={cl.logo}/>
         </div>
 
         <nav>
@@ -29,7 +26,7 @@ const Header = () => (
 
       <div className={cl.contacts}>
         <div className={cl.contact}>
-          <Icon name={'phone'} className={cl.icon} />
+          <Icon name="phone" className={cl.svg}/>
           <div>
             <h4 className={cl.title}>Call us</h4>
             <p className={cl.text}>(405) 555-0128</p>
@@ -37,8 +34,7 @@ const Header = () => (
         </div>
 
         <div className={cl.contact}>
-          <IconChat className={cl.icon} />
-          <Icon name={'chat'} className={cl.icon} />
+          <Icon name="chat" className={cl.svg}/>
           <div>
             <h4 className={cl.title}>Talk to us</h4>
             <p className={cl.text}>hello@createx.com</p>
@@ -47,7 +43,7 @@ const Header = () => (
       </div>
 
       <div className={cl.menu}>
-        <Menu />
+        <Menu/>
       </div>
     </div>
   </Wrap>
