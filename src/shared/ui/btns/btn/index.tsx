@@ -9,12 +9,12 @@ interface IProps {
   fill?: boolean
 }
 
-const OrangeBtn: FC<IProps> = ({title, fill, solid, type}) => (
+const Button: FC<IProps> = ({title, fill, solid, type}) => (
   <button
     className={[
       cl.button,
       solid ? cl.solid : null,
-      fill ? fill : null,
+      fill ? cl.fill : null,
       cl[type]
     ].join(" ")}
   >
@@ -22,4 +22,4 @@ const OrangeBtn: FC<IProps> = ({title, fill, solid, type}) => (
   </button>
 )
 
-export default OrangeBtn;
+export default Button;
