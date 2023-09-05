@@ -15,6 +15,11 @@
   &.large {
     padding: 15px 40px;
     font-size: 16px;
+
+    @media (max-width: 350px) {
+      padding: 10px 25px;
+      letter-spacing: 0;
+    }
   }
 
   &.regular {
