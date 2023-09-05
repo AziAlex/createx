@@ -1,14 +1,52 @@
+@import "@/var";
+
 .sliderItem {
   height: calc(100vh - 92px);
-  background-color: red;
+  position: relative;
 
-  div {
-    display: flex;
+  img {
+    z-index: -10;
+    object-fit: cover;
+  }
 
-    button:first-child {
-      padding: 10px 40px;
-      border: 1px solid #fff;
-      border-radius: 4px;
+  .sliderContent {
+    max-width: 595px;
+    margin-left: 345px;
+    padding-top: 200px;
+
+    h2 {
+      font-size: 72px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 130%;
+      color: #fff;
+
+      span {
+        color: $orange;
+      }
+    }
+
+    p {
+      margin-top: 24px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%;
+      color: #fff;
+    }
+
+    div {
+      margin-top: 60px;
+      display: flex;
+      gap: 24px;
+
+      button:first-child {
+        padding: 10px 40px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        color: #fff;
+        background: transparent;
+        cursor: pointer;
+      }
     }
   }
 }
