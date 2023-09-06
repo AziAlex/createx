@@ -1,0 +1,29 @@
+@import '@/var';
+@import "@/mixins";
+
+.videoBlock {
+  width: 100%;
+  text-align: center;
+  margin-bottom: responsive(60px, 180px);
+
+  @media (max-width: 1230px) {
+    padding: 0 20px;
+  }
+
+  p {
+    margin-top: 24px;
+    margin-bottom: responsive(30px, 60px);
+  }
+
+  .img {
+    position: relative;
+
+    img {
+      filter: brightness(0.5);
+      border-radius: 4px;
+      width: 100%;
+      max-width: 1230px;
+      height: auto;
+    }
+  }
+}
