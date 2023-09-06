@@ -1,62 +1,13 @@
-@mixin res-text($size-at-min-width, $size-at-max-width) {
-  $min-width: 360px;
-  $max-width: 1230px;
-  $slope: ($size-at-max-width - $size-at-min-width) / ($max-width - $min-width);
-  $y-axis-intersection: -1 * $min-width * $slope + $size-at-min-width;
-  $clamp-value: clamp(#{$size-at-min-width}, #{$y-axis-intersection} + #{$slope} * 100vw, #{$size-at-max-width});
-  font-size: $clamp-value;
-}
+$mobile: 360px;
+$desktop: 1230px;
 
-@mixin res-mb($size-at-min-width, $size-at-max-width) {
-  $min-width: 360px;
-  $max-width: 1230px;
-  $slope: ($size-at-max-width - $size-at-min-width) / ($max-width - $min-width);
-  $y-axis-intersection: -1 * $min-width * $slope + $size-at-min-width;
-  $clamp-value: clamp(#{$size-at-min-width}, #{$y-axis-intersection} + #{$slope} * 100vw, #{$size-at-max-width});
-  margin-bottom: $clamp-value;
-}
-
-@mixin padding($size-at-min-width, $size-at-max-width) {
-  $min-width: 360px;
-  $max-width: 1230px;
-  $slope: ($size-at-max-width - $size-at-min-width) / ($max-width - $min-width);
-  $y-axis-intersection: -1 * $min-width * $slope + $size-at-min-width;
-  $clamp-value: clamp(#{$size-at-min-width}, #{$y-axis-intersection} + #{$slope} * 100vw, #{$size-at-max-width});
-  padding: $clamp-value;
-}
-
-@mixin paddingTop($size-at-min-width, $size-at-max-width) {
-  $min-width: 360px;
-  $max-width: 1230px;
-  $slope: ($size-at-max-width - $size-at-min-width) / ($max-width - $min-width);
-  $y-axis-intersection: -1 * $min-width * $slope + $size-at-min-width;
-  $clamp-value: clamp(#{$size-at-min-width}, #{$y-axis-intersection} + #{$slope} * 100vw, #{$size-at-max-width});
-  padding-top: $clamp-value;
-}
-
-@mixin paddingRight($size-at-min-width, $size-at-max-width) {
-  $min-width: 360px;
-  $max-width: 1230px;
-  $slope: ($size-at-max-width - $size-at-min-width) / ($max-width - $min-width);
-  $y-axis-intersection: -1 * $min-width * $slope + $size-at-min-width;
-  $clamp-value: clamp(#{$size-at-min-width}, #{$y-axis-intersection} + #{$slope} * 100vw, #{$size-at-max-width});
-  padding-right: $clamp-value;
-}
-
-@mixin paddingBottom($size-at-min-width, $size-at-max-width) {
-  $min-width: 360px;
-  $max-width: 1230px;
-  $slope: ($size-at-max-width - $size-at-min-width) / ($max-width - $min-width);
-  $y-axis-intersection: -1 * $min-width * $slope + $size-at-min-width;
-  $clamp-value: clamp(#{$size-at-min-width}, #{$y-axis-intersection} + #{$slope} * 100vw, #{$size-at-max-width});
-  padding-bottom: $clamp-value;
-}
-
-@mixin paddingLeft($size-at-min-width, $size-at-max-width) {
-  $min-width: 360px;
-  $max-width: 1230px;
-  $slope: ($size-at-max-width - $size-at-min-width) / ($max-width - $min-width);
-  $y-axis-intersection: -1 * $min-width * $slope + $size-at-min-width;
-  $clamp-value: clamp(#{$size-at-min-width}, #{$y-axis-intersection} + #{$slope} * 100vw, #{$size-at-max-width});
-  padding-left: $clamp-value;
+@function responsive($min-size, $max-size) {
+  $slope: ($max-size - $min-size) / ($desktop - $mobile);
+  $y-axis-intersection: -1 * $mobile * $slope + $min-size;
+  $clamp-value: clamp(
+    #{$min-size},
+    #{$y-axis-intersection} + #{$slope} * 100vw,
+    #{$max-size}
+  );
+  @return $clamp-value;
 }

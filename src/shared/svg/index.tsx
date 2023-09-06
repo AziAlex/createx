@@ -20,14 +20,14 @@ import {
 
 export type IconName =
   | 'logo'
-  | 'arrow-convert'
-  | 'arrow-down'
-  | 'arrow-left'
-  | 'arrow-right'
-  | 'arrow-top'
+  | 'arrowConvert'
+  | 'arrowDown'
+  | 'arrowLeft'
+  | 'arrowRight'
+  | 'arrowTop'
   | 'chat'
-  | 'chevrons-down'
-  | 'chevrons-top'
+  | 'chevronsDown'
+  | 'chevronsTop'
   | 'cross'
   | 'hand'
   | 'like'
@@ -41,7 +41,7 @@ interface Iprops {
 }
 
 const Icon: FC<Iprops> = ({ name, className }) => {
-  const icons: { [key: string]: React.ReactNode } = {
+  const icons: { [key in IconName]: React.ReactNode } = {
     arrowConvert: <IconArrowConvert className={className} />,
     arrowDown: <IconArrowDown className={className} />,
     arrowLeft: <IconArrowLeft className={className} />,
