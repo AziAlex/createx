@@ -1,7 +1,10 @@
 @import "@/var";
+@import "@/mixins";
+
 
 .sliderItem {
   height: calc(100vh - 92px);
+  max-height: 1080px;
   position: relative;
 
   @media (max-width: 1100px) {
@@ -17,32 +20,34 @@
   }
 
   .sliderContent {
-    position: absolute;
     max-width: 595px;
-    left: 18%;
-    top: 23.5%;
 
-    @media (max-width: 1100px) {
-      left: 5%;
+    @media (max-width: 1250px) {
+      padding: 0 20px;
     }
 
     @media (max-width: 610px) {
       left: 0;
       padding: 0 20px;
-      text-align: center;
     }
 
     h2 {
+      text-align: left;
       font-size: 72px;
       font-weight: 700;
       letter-spacing: 1px;
       line-height: 130%;
       color: #fff;
 
+      @media (max-width: 610px) {
+        text-align: center;
+      }
+
       span {
         color: $btn;
       }
     }
+
 
     p {
       margin-top: 24px;
@@ -50,6 +55,10 @@
       font-weight: 400;
       line-height: 150%;
       color: #fff;
+
+      @media (max-width: 610px) {
+        text-align: center;
+      }
     }
 
     div {
@@ -83,11 +92,7 @@
       }
 
       p {
-        margin-top: 50px;
         font-size: 18px;
-      }
-      div {
-        margin-top: 100px;
       }
     }
 
