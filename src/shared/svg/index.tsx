@@ -15,7 +15,7 @@ import {
   IconCross,
   IconLike,
   IconSlippers,
-  IconHand,
+  IconHand, IconPlay,
 } from '@/shared/svg/Icon'
 
 export type IconName =
@@ -34,6 +34,7 @@ export type IconName =
   | 'menu'
   | 'phone'
   | 'slippers'
+  | 'play'
 
 interface Iprops {
   name: IconName
@@ -57,6 +58,7 @@ const Icon: FC<Iprops> = ({ name, className }) => {
     menu: <IconBurgerMenu className={className} />,
     phone: <IconPhone className={className} />,
     slippers: <IconSlippers className={className} />,
+    play: <IconPlay className={className} />,
   }
 
   return <>{icons[name]}</>
