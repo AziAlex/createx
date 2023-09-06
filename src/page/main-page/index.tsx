@@ -1,11 +1,12 @@
 import Header from '@/widgets/header'
-import React from 'react'
-import MainSlider from "@/feature/main-slider";
+import MainSlider from '@/feature/main-slider'
+import OurValues from './ui/ourValues'
 
 const ManiPage = () => (
   <>
-    <Header/>
-    <MainSlider/>
+    <Header />
+    <MainSlider />
+    <OurValues />
   </>
 )
 
