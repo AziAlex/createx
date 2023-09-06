@@ -6,7 +6,7 @@ interface IProps {
 
 const UseResizeVideo: FC<IProps> = ({ setVideoConfig }) => {
   const [width, setWidth] = useState<number>(1920)
-  console.log('saf')
+
   useEffect(() => {
     const newVideoConfig = (width: number) => {
       switch (true) {
