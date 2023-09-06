@@ -9,7 +9,7 @@ import img from '/public/main-page/video-block.jpg'
 import Icon from '@/shared/svg'
 
 import cl from './style.module.scss'
-import { useResizeVideo } from '@/page/main-page/ui/video-block/lib/hooks'
+import UseResizeVideo from '@/page/main-page/ui/video-block/lib/hooks'
 
 const VideoBlock = () => {
   const [videoWatch, setVideoWatch] = useState<boolean>(false)
@@ -28,20 +28,6 @@ const VideoBlock = () => {
       document.body.style.overflow = 'unset'
     }
   }, [videoWatch])
-
-  useEffect(() => {
-    useResizeVideo(setVideoConfig, videoConfig)
-
-    window.addEventListener('resize', () => {
-      useResizeVideo(setVideoConfig, videoConfig)
-    })
-
-    return () => {
-      window.removeEventListener('resize', () => {
-        useResizeVideo(setVideoConfig, videoConfig)
-      })
-    }
-  }, [])
 
   return (
     <>
@@ -68,6 +54,7 @@ const VideoBlock = () => {
           />
         </div>
       )}
+      <UseResizeVideo setVideoConfig={setVideoConfig} />
     </>
   )
 }
