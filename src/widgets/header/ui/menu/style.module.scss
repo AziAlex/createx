@@ -19,8 +19,8 @@
     background-color: rgba(103, 103, 103, 0.5);
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: -20px;
+    width: calc(100% + 40px);
     height: 100vh;
     bottom: 0;
     z-index: 1;
@@ -30,7 +30,7 @@
   .menu {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -22px;
     max-width: 450px;
     padding-bottom: 20px;
     width: calc(100vw - 30px);
