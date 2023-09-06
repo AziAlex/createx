@@ -1,8 +1,6 @@
 @import '@/var';
 @import '@/mixins';
 
-@import "@/mixins";
-
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +31,6 @@ h2 {
 h4 {
   color: $gray-700;
   text-align: center;
-  font-size: 18px;
   font-size: responsive(14, 18px);
   font-weight: 400;
   line-height: responsive(18px, 27px);
