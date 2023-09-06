@@ -28,6 +28,9 @@
       ],
       "@/var": [
         "./src/app/style/variable.scss"
+      ],
+      "@/mixins": [
+        "./src/app/style/mixins.scss"
       ]
     }
   },
