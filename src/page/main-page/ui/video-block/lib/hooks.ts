@@ -1,8 +1,3 @@
-interface IResizeProps {
-  setVideoConfig: (videoConfig: any) => void
-  videoConfig: any
-}
-
 export const useResizeVideo = (setVideoConfig: (videoConfig: any) => void, videoConfig: any) => {
   const width = document.body.clientWidth
 
