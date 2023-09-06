@@ -6,7 +6,6 @@ import SliderItem from '@/feature/main-slider/ui/slider-item'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './style.scss'
-import Wrap from '@/shared/ui/wrap'
 
 const MainSlider = () => {
   const items = [0, 1, 2, 3]
