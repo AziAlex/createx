@@ -1,15 +1,15 @@
 import Header from '@/widgets/header'
-import React from 'react'
-import Slider from "react-slick";
-import MainSlider from "@/feature/main-slider";
+import MainSlider from '@/feature/main-slider'
+import OurValues from './ui/ourValues'
+import VideoBlock from '@/page/main-page/ui/video-block'
 
-const ManiPage = () => {
-  return (
-    <>
-      <Header />
-      <MainSlider/>
-    </>
-  )
-}
+const ManiPage = () => (
+  <>
+    <Header />
+    <MainSlider />
+    <VideoBlock />
+    <OurValues />
+  </>
+)
 
 export default ManiPage

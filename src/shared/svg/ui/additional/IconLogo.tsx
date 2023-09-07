@@ -1,13 +1,13 @@
-import { FC } from 'react'
+import {FC} from 'react'
 
-export const IconLogo: FC<{ className: string }> = ({ className }) => (
+export const IconLogo: FC<{ className: string }> = ({className}) => (
   <svg
     className={className}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 130 22"
     fill="none"
   >
-    <g clip-path="url(#clip0_76202_2121)">
+    <g clipPath="url(#clip0_76202_2121)">
       <path
         d="M0 11.0998C0 4.9998 3.3 1.2998 8.7 1.2998C12.8 1.2998 16.1 3.7998 16.7 7.4998C16.8 7.8998 16.5 8.1998 16.1 8.1998H13.5C13.2 8.1998 13 7.9998 12.9 7.6998C12.4 5.7998 10.8 4.5998 8.7 4.5998C5.8 4.5998 4 7.0998 4 11.0998C4 15.0998 5.8 17.5998 8.8 17.5998C10.9 17.5998 12.4 16.4998 13 14.6998C13.1 14.3998 13.3 14.1998 13.6 14.1998H16.2C16.6 14.1998 16.9 14.5998 16.8 14.8998C16.2 18.4998 13 20.8998 8.8 20.8998C3.3 20.8998 0 17.0998 0 11.0998Z"
         fill="#1E212C"
@@ -43,7 +43,7 @@ export const IconLogo: FC<{ className: string }> = ({ className }) => (
     </g>
     <defs>
       <clipPath id="clip0_76202_2121">
-        <rect width="130" height="22" fill="white" />
+        <rect width="130" height="22" fill="white"/>
       </clipPath>
     </defs>
   </svg>

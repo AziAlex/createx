@@ -1,22 +1,68 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react'
 
-import {IconArrow, IconPhone} from "@/shared/svg/Icon";
+import {
+  IconArrowConvert,
+  IconLogo,
+  IconArrowDown,
+  IconArrowLeft,
+  IconArrowRight,
+  IconArrowTop,
+  IconPhone,
+  IconChat,
+  IconBurgerMenu,
+  IconChevronsDown,
+  IconChevronsTop,
+  IconCross,
+  IconLike,
+  IconSlippers,
+  IconHand,
+  IconPlay,
+} from '@/shared/svg/Icon'
 
-export type IconName = "phone" | "arrow"
+export type IconName =
+  | 'logo'
+  | 'arrowConvert'
+  | 'arrowDown'
+  | 'arrowLeft'
+  | 'arrowRight'
+  | 'arrowTop'
+  | 'chat'
+  | 'chevronsDown'
+  | 'chevronsTop'
+  | 'cross'
+  | 'hand'
+  | 'like'
+  | 'menu'
+  | 'phone'
+  | 'slippers'
+  | 'play'
 
 interface Iprops {
   name: IconName
   className: string
 }
 
-
-const Icon: FC<Iprops> = ({name, className}) => {
-  const icons: { [key: string]: React.ReactNode } = {
-    phone: <IconPhone className={className}/>,
-    arrow: <IconArrow className={className}/>
+const Icon: FC<Iprops> = ({ name, className }) => {
+  const icons: { [key in IconName]: React.ReactNode } = {
+    arrowConvert: <IconArrowConvert className={className} />,
+    arrowDown: <IconArrowDown className={className} />,
+    arrowLeft: <IconArrowLeft className={className} />,
+    arrowRight: <IconArrowRight className={className} />,
+    arrowTop: <IconArrowTop className={className} />,
+    chat: <IconChat className={className} />,
+    chevronsDown: <IconChevronsDown className={className} />,
+    chevronsTop: <IconChevronsTop className={className} />,
+    cross: <IconCross className={className} />,
+    hand: <IconHand className={className} />,
+    like: <IconLike className={className} />,
+    logo: <IconLogo className={className} />,
+    menu: <IconBurgerMenu className={className} />,
+    phone: <IconPhone className={className} />,
+    slippers: <IconSlippers className={className} />,
+    play: <IconPlay className={className} />,
   }
 
   return <>{icons[name]}</>
-};
+}
 
-export default Icon;
+export default Icon

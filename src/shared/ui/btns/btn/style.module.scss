@@ -1,0 +1,53 @@
+@import "@/var";
+
+.button {
+  height: fit-content;
+  color: $btn;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid $btn;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .2s;
+
+  &.large {
+    padding: 15px 40px;
+    font-size: 16px;
+
+    @media (max-width: 350px) {
+      padding: 10px 25px;
+      letter-spacing: 0;
+    }
+  }
+
+  &.regular {
+    padding: 12px 32px;
+    font-size: 14px;
+  }
+
+  &.small {
+    padding: 10px 24px;
+    font-size: 12px;
+  }
+
+  &.fill {
+    width: 100%;
+  }
+
+  &.solid {
+    background-color: $btn;
+    color: #fff;
+
+    &:hover {
+      background-color: $btn-hover;
+      border: 1px solid $btn-hover;
+    }
+  }
+
+  &:hover {
+    background-color: $btn;
+    color: #fff;
+  }
+}
