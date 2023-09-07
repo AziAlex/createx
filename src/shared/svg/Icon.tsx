@@ -3,6 +3,7 @@ export * from './ui/additional/IconLike'
 export * from './ui/additional/IconLogo'
 export * from './ui/additional/IconPhone'
 export * from './ui/additional/IconSlippers'
+export * from './ui/additional/IconPlay'
 
 export * from './ui/arrows/IconArrowDown'
 export * from './ui/arrows/IconArrowLeft'

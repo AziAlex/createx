@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 
 export const IconArrowConvert: FC<{ className: string }> = ({className}) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
     <path fillRule="evenodd" clipRule="evenodd"
           d="M2.09961 2C2.65189 2 3.09961 2.44772 3.09961 3V7.43632C4.75764 4.20928 8.11959 2 11.9996 2C16.3552 2 20.058 4.78413 21.4303 8.66675C21.6144 9.18747 21.3414 9.75879 20.8207 9.94284C20.3 10.1269 19.7287 9.85396 19.5446 9.33325C18.4459 6.22472 15.4813 4 11.9996 4C9.03957 4 6.45326 5.60799 5.06955 8H8.09957C8.65186 8 9.09957 8.44772 9.09957 9C9.09957 9.55228 8.65186 10 8.09957 10H2.09961C1.54732 10 1.09961 9.55228 1.09961 9V3C1.09961 2.44772 1.54732 2 2.09961 2Z"
           fill="#1E212C"/>

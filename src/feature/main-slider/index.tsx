@@ -17,7 +17,6 @@ const MainSlider = () => {
           0{index + 1}
         </a>
       )}
-
       arrows={false}
       slidesToScroll={1}
       slidesToShow={1}
