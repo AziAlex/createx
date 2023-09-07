@@ -1,25 +1,26 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react'
 
-import cl from "./style.module.scss"
+import cl from './style.module.scss'
 
-interface IProps {
+interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   title: string
-  type: "large" | "regular" | "small"
+  size: 'large' | 'regular' | 'small'
   solid?: boolean
   fill?: boolean
 }
 
-const Button: FC<IProps> = ({title, fill, solid, type}) => (
+const Button: FC<IProps> = ({ title, fill, solid, size, ...props }) => (
   <button
     className={[
       cl.button,
       solid ? cl.solid : null,
       fill ? cl.fill : null,
-      cl[type]
-    ].join(" ")}
+      cl[size],
+    ].join(' ')}
+    {...props}
   >
     {title}
   </button>
 )
 
-export default Button;
+export default Button
