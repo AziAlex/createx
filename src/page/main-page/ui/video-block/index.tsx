@@ -7,19 +7,23 @@ import Wrap from '@/shared/ui/wrap'
 import Image from 'next/image'
 import img from '/public/main-page/video-block.jpg'
 import Icon from '@/shared/svg'
-
-import cl from './style.module.scss'
 import UseResizeVideo from '@/page/main-page/ui/video-block/lib/hooks'
 
+import cl from './style.module.scss'
+
+const initConfig = {
+  height: '600',
+  width: '1065',
+  playerVars: {
+    autoplay: 1,
+  },
+}
+
+export type TMyVideo = typeof initConfig
+
 const VideoBlock = () => {
-  const [videoWatch, setVideoWatch] = useState<boolean>(false)
-  const [videoConfig, setVideoConfig] = useState({
-    height: '600',
-    width: '1065',
-    playerVars: {
-      autoplay: 1,
-    },
-  })
+  const [videoWatch, setVideoWatch] = useState(false)
+  const [videoConfig, setVideoConfig] = useState(initConfig)
 
   useEffect(() => {
     if (videoWatch) {

@@ -15,7 +15,8 @@ import {
   IconCross,
   IconLike,
   IconSlippers,
-  IconHand, IconPlay,
+  IconHand,
+  IconPlay,
 } from '@/shared/svg/Icon'
 
 export type IconName =
