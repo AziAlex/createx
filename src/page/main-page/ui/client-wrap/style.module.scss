@@ -1,0 +1,7 @@
+@import "@/var";
+@import "@/mixins";
+
+.clientWrap {
+  background-color: $gray-200;
+  padding-top: responsive(24px, 60px);
+}
