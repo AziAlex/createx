@@ -28,6 +28,14 @@ h2 {
   line-height: responsive(36px, 59.8px);
 }
 
+h3 {
+  color: $gray-900;
+  text-align: center;
+  font-size: responsive(18px, 28px);
+  font-weight: 700;
+  line-height: responsive(18px, 42px);
+}
+
 h4 {
   color: $gray-700;
   text-align: center;

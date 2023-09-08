@@ -11,7 +11,6 @@ const ClientCommentSlider = () => {
   return (
     <div className={styles.slider}>
       <Slider
-        // arrows
         slidesToScroll={1}
         slidesToShow={1}
         infinite={true}
