@@ -1,7 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
 
-import Icon from '@/shared/svg'
 import ClientCommentItem from '@/entities/client-comment'
 import Arrow from '@/feature/sliders/client-comment/ui/arrow'
 

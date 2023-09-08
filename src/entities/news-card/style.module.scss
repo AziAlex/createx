@@ -1,0 +1,32 @@
+@import "@/var";
+@import "@/mixins";
+
+.info {
+  padding: responsive(8px, 24px);
+
+  .subInfo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    span {
+      color: $gray-700;
+      display: flex;
+      align-items: center;
+
+      .svg {
+        width: 16px;
+        height: 16px;
+        fill: $gray-700;
+      }
+    }
+
+
+    .line {
+      width: 1px;
+      height: 100%;
+      background-color: $gray-700;
+    }
+  }
+}
+
