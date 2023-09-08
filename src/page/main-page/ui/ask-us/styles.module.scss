@@ -1,0 +1,40 @@
+@import '@/var';
+@import '@/mixins';
+
+.container {
+  @include paddingX(30px, 60px);
+  @include paddingY(20px, 48px);
+  background-color: $white;
+
+  h3 {
+    margin-bottom: responsive(30px, 60px);
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .flex__block {
+      display: flex;
+      flex: 1;
+      gap: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 900px) {
+    form {
+      display: block;
+
+      .flex__block {
+        display: block;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
