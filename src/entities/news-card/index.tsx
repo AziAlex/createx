@@ -16,7 +16,7 @@ const NewsCard: FC<IProps> = ({ card, minCard }) => {
 
 
   return (
-    <div>
+    <div className={[minCard ? styles.minCard : null, styles.card].join(' ')}>
       <Image src={card.img} alt={card.title} width={705} height={360} />
       <div className={styles.info}>
         <h4>{card.title}</h4>
@@ -30,7 +30,7 @@ const NewsCard: FC<IProps> = ({ card, minCard }) => {
             {card.comments} comments
         </span>
         </div>
-        {!minCard && <p>{card.description}</p>}
+        <p className={minCard ? styles.description : ''}>{card.description}</p>
       </div>
     </div>
   )
