@@ -1,7 +1,7 @@
 'use client'
 
 import Slider from 'react-slick'
-import SliderItem from '@/feature/main-slider/ui/slider-item'
+import SliderItem from '@/feature/sliders/main-slider/ui/slider-item'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
