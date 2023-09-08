@@ -6,12 +6,27 @@
   }
 
   .newsBlock {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr auto;
+    gap: responsive(10px, 30px);
+    margin-bottom: responsive(30px, 80px);
 
+    & > div:first-child {
+      grid-row: 1 / span 2;
+    }
+
+    @media (max-width: 1230px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .footer {
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin-bottom: responsive(40px, 120px);
   }
 }
