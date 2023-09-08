@@ -12,10 +12,11 @@ const AskUs = () => {
   const [values, setValues] = useState(initValues)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setValues({
-      ...values,
-      [e.target.name]: e.target.value,
-    })
+    const { name, value } = e.target
+    setValues((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }))
   }
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -29,11 +30,7 @@ const AskUs = () => {
       <div className={styles.container}>
         <h3>Want to know more? Ask us a question:</h3>
         <div className={styles.form}>
-          <form
-            className={styles.form__wrapper}
-            method="post"
-            onSubmit={handleSubmit}
-          >
+          <form className={styles.form__wrapper} onSubmit={handleSubmit}>
             <div className={styles.flex__block}>
               <Input
                 label="Name"
@@ -62,7 +59,7 @@ const AskUs = () => {
                 placeholder="Your message"
                 name="message"
                 onChange={handleChange}
-                value={values.email}
+                value={values.message}
               />
 
               <Button title="Send" size="regular" solid />
