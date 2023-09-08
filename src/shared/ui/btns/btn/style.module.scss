@@ -1,4 +1,5 @@
 @import "@/var";
+@import "@/mixins";
 
 .button {
   height: fit-content;
@@ -11,24 +12,27 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: .2s;
+  white-space: nowrap;
 
   &.large {
-    padding: 15px 40px;
+    @include paddingY(8px, 15px);
+    @include paddingX(16px, 40px);
     font-size: 16px;
 
     @media (max-width: 350px) {
-      padding: 10px 25px;
       letter-spacing: 0;
     }
   }
 
   &.regular {
-    padding: 12px 32px;
+    @include paddingY(6px, 12px);
+    @include paddingX(12px, 32px);
     font-size: 14px;
   }
 
   &.small {
-    padding: 10px 24px;
+    @include paddingY(6px, 10px);
+    @include paddingX(12px, 24px);
     font-size: 12px;
   }
 
