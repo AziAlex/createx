@@ -3,6 +3,7 @@ import MainSlider from '../../feature/sliders/main-slider'
 import OurValues from './ui/ourValues'
 import VideoBlock from '@/page/main-page/ui/video-block'
 import ClientPartners from '@/page/main-page/ui/client-wrap'
+import RecentNews from '@/page/main-page/ui/recent-news'
 
 
 const ManiPage = () => (
@@ -12,6 +13,7 @@ const ManiPage = () => (
     <VideoBlock />
     <OurValues />
     <ClientPartners />
+    <RecentNews />
   </>
 )
 
