@@ -1,8 +1,9 @@
-import Header from '@/widgets/header'
-import MainSlider from '../../feature/sliders/main-slider'
-import OurValues from './ui/ourValues'
-import VideoBlock from '@/page/main-page/ui/video-block'
+import AskUs from '@/page/main-page/ui/ask-us'
 import ClientPartners from '@/page/main-page/ui/client-wrap'
+import Header from '@/widgets/header'
+import MainSlider from '@/feature/sliders/main-slider'
+import OurValues from '@/page/main-page/ui/our-values'
+import VideoBlock from '@/page/main-page/ui/video-block'
 import RecentNews from '@/page/main-page/ui/recent-news'
 
 
@@ -12,6 +13,7 @@ const ManiPage = () => (
     <MainSlider />
     <VideoBlock />
     <OurValues />
+    <AskUs />
     <ClientPartners />
     <RecentNews />
   </>

@@ -1,6 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## mycli
+
+- `yarn add commander`
+
+In bash terminal apply:
+
+- `chmod +x mycli.js` ( Make sure the mycli.js file has executable permissions. You can install them using the chmod command. Use only bash )
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 

@@ -2,6 +2,7 @@
 @import '@/mixins';
 
 .our_values {
+  margin-bottom: responsive(60px, 122px);
   .cards__wrapper {
     display: flex;
     justify-content: space-between;
