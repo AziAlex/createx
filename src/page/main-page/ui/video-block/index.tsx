@@ -35,16 +35,18 @@ const VideoBlock = () => {
 
   return (
     <>
-      <div className={cl.videoBlock}>
-        <h2>We are Createx Construction Bureau</h2>
-        <p>We are rightfully considered to be the best construction company in the USA.</p>
-        <div className={cl.img}>
-          <Image src={img} alt='video' width={1230} height={500} />
-          <div className={cl.play} onClick={() => setVideoWatch(true)}>
-            <Icon name='play' className={cl.play} />
+      <Wrap>
+        <div className={cl.videoBlock}>
+          <h2>We are Createx Construction Bureau</h2>
+          <p>We are rightfully considered to be the best construction company in the USA.</p>
+          <div className={cl.img}>
+            <Image src={img} alt='video' width={1230} height={500} />
+            <div className={cl.play} onClick={() => setVideoWatch(true)}>
+              <Icon name='play' className={cl.play} />
+            </div>
           </div>
         </div>
-      </div>
+      </Wrap>
       {videoWatch && (
         <div
           className={cl.videoWrap}
