@@ -1,5 +1,13 @@
-.footer {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+@import "@/mixins";
+
+.recentNews {
+  & > h2 {
+    margin-bottom: responsive(24px, 60px);
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
 }
