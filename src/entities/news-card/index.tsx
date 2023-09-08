@@ -12,28 +12,26 @@ interface IProps {
   minCard?: boolean
 }
 
-const NewsCard: FC<IProps> = ({ card, minCard }) => {
-
-
-  return (
-    <div className={[minCard ? styles.minCard : null, styles.card].join(' ')}>
+const NewsCard: FC<IProps> = ({ card, minCard }) => (
+  <div className={[minCard ? styles.minCard : null, styles.card].join(' ')}>
+    <div className={styles.img}>
       <Image src={card.img} alt={card.title} width={705} height={360} />
-      <div className={styles.info}>
-        <h4>{card.title}</h4>
-        <div className={styles.subInfo}>
-          <span>{card.type}</span>
-          <span className={styles.line}></span>
-          <span>{createDate(card.date)}</span>
-          <span className={styles.line}></span>
-          <span>
-          <Icon name='chat' className={styles.svg} />
-            {card.comments} comments
-        </span>
-        </div>
-        <p className={minCard ? styles.description : ''}>{card.description}</p>
-      </div>
     </div>
-  )
-}
+    <div className={styles.info}>
+      <h4>{card.title}</h4>
+      <div className={styles.subInfo}>
+        <span>{card.type}</span>
+        <span className={styles.line}></span>
+        <span>{createDate(card.date)}</span>
+        <span className={styles.line}></span>
+        <span>
+          <Icon name='chat' className={styles.svg} />
+          {card.comments} comments
+        </span>
+      </div>
+      <p className={minCard ? styles.description : ''}>{card.description}</p>
+    </div>
+  </div>
+)
 
 export default NewsCard
