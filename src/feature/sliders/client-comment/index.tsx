@@ -15,7 +15,6 @@ const ClientCommentSlider = () => {
         slidesToShow={1}
         infinite={true}
         speed={500}
-
         prevArrow={<button><Icon name='arrowLeft' className={styles.arrow} /></button>}
         nextArrow={<button><Icon name='arrowRight' className={styles.arrow} /></button>}
       >
