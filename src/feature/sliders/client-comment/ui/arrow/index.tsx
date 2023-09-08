@@ -8,14 +8,15 @@ import styles from './style.module.scss'
 
 interface IProps {
   arrow?: 'left' | 'right';
+  onClick?: () => void;
 }
 
 const ArrowSlide: FC<IProps> = ({ arrow, onClick }) => (
-  <button onClick={onClick} className={styles[arrow]}>
+  <button onClick={onClick} className={styles.arrow}>
     {arrow === 'left' ? (
-      <Icon name='arrowLeft' className={styles.arrow} />
+      <Icon name='arrowLeft' className={styles.left} />
     ) : (
-      <Icon name='arrowRight' className={styles.arrow} />
+      <Icon name='arrowRight' className={styles.right} />
     )}
   </button>
 )
