@@ -10,6 +10,7 @@ import styles from './styles.module.scss'
 
 const AskUs = () => {
   const [values, setValues] = useState(initValues)
+  const error = Object.values(values).every((value) => !value.length)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
@@ -39,6 +40,7 @@ const AskUs = () => {
                 name="name"
                 onChange={handleChange}
                 value={values.name}
+                required
               />
 
               <Input
@@ -48,7 +50,7 @@ const AskUs = () => {
                 name="phone"
                 onChange={handleChange}
                 value={values.phone}
-                className="example"
+                required
               />
             </div>
 
@@ -60,9 +62,15 @@ const AskUs = () => {
                 name="message"
                 onChange={handleChange}
                 value={values.message}
+                required
               />
 
-              <Button title="Send" size="regular" solid />
+              <Button
+                title="Send"
+                size="regular"
+                solid
+                disabled={error}
+              />
             </div>
           </form>
         </div>
