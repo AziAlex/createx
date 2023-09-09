@@ -1,0 +1,16 @@
+@import "@/mixins";
+
+.wrap {
+  position: relative;
+  @include paddingY(20px, 80px);
+
+  .parentForm {
+    display: flex;
+    justify-content: end;
+  }
+
+  & > img {
+    object-fit: cover;
+    z-index: -10;
+  }
+}
