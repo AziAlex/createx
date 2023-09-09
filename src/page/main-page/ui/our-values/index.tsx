@@ -9,9 +9,9 @@ const OurValues = () => (
   <Wrap>
     <div className={cl.our_values}>
       <h2>Our core values</h2>
-      <h4>
+      <p>
         Our mission is to set the highest standards for construction sphere.
-      </h4>
+      </p>
 
       <div className={cl.cards__wrapper}>
         {cards.map((card, idx) => (
