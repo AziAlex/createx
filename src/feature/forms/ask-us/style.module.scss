@@ -1,0 +1,30 @@
+@import "@/var";
+@import "@/mixins";
+
+.form__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .flex__block {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .form__wrapper {
+    display: block;
+
+    .flex__block {
+      display: block;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}

@@ -14,7 +14,7 @@ const Card: FC<Props> = ({ card }) => (
       <Icon className={cl.icon} name={card.img} />
     </div>
     <h3>{card.title}</h3>
-    <p>{card.text}</p>
+    <p className={cl.text}>{card.text}</p>
   </div>
 )
 

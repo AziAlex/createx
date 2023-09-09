@@ -7,17 +7,20 @@ interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size: 'large' | 'regular' | 'small'
   solid?: boolean
   fill?: boolean
+  disabled?: boolean
 }
 
-const Button: FC<IProps> = ({ title, fill, solid, size, ...props }) => (
+const Button: FC<IProps> = ({ title, fill, solid, size, disabled, ...props }) => (
   <button
     className={[
       cl.button,
       solid ? cl.solid : null,
       fill ? cl.fill : null,
       cl[size],
+      disabled ? cl.disabled : null,
     ].join(' ')}
     {...props}
+    disabled={disabled}
   >
     {title}
   </button>
