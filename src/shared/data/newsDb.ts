@@ -1,6 +1,6 @@
 import { INewsCard } from '@/shared/types/news'
 
-export const newsDbData: INewsCard[] = [
+export const newsData: INewsCard[] = [
   {
     id: 1,
     img: "/news/Building Construction Hand Tools.jpg",

@@ -7,11 +7,11 @@ import 'slick-carousel/slick/slick-theme.css'
 import styles from './style.module.scss'
 
 interface IProps {
-  arrow?: 'left' | 'right';
+  arrow: 'left' | 'right';
   onClick?: () => void;
 }
 
-const ArrowSlide: FC<IProps> = ({ arrow, onClick }) => (
+export const ArrowSlider: FC<IProps> = ({ arrow, onClick }) => (
   <button onClick={onClick} className={styles.arrow}>
     {arrow === 'left' ? (
       <Icon name='arrowLeft' className={styles.left} />
@@ -20,6 +20,3 @@ const ArrowSlide: FC<IProps> = ({ arrow, onClick }) => (
     )}
   </button>
 )
-
-
-export default ArrowSlide
