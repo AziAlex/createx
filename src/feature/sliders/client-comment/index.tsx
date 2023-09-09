@@ -2,10 +2,10 @@ import React from 'react'
 import Slider from 'react-slick'
 
 import ClientCommentItem from '@/entities/client-comment'
-import Arrow from '@/feature/sliders/client-comment/ui/arrow'
 
 import styles from './style.module.scss'
 import './style.scss'
+import { ArrowSlider } from '@/feature/sliders/client-comment/ui/arrow-slider'
 
 const ClientCommentSlider = () => {
   return (
@@ -15,8 +15,8 @@ const ClientCommentSlider = () => {
         slidesToShow={1}
         infinite={true}
         speed={500}
-        nextArrow={<Arrow arrow='right' />}
-        prevArrow={<Arrow arrow='left' />}
+        nextArrow={<ArrowSlider arrow='right' />}
+        prevArrow={<ArrowSlider arrow='left' />}
       >
         <ClientCommentItem />
         <ClientCommentItem />
