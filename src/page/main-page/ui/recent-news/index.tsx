@@ -1,7 +1,7 @@
 import Wrap from '@/shared/ui/wrap'
 import Button from '@/shared/ui/btns/btn'
 import NewsCard from '@/entities/news-card'
-import { newsDbData } from '@/shared/data/newsDb'
+import { newsData } from '@/shared/data/newsDb'
 
 import styles from './style.module.scss'
 
@@ -10,9 +10,9 @@ const RecentNews = () => (
     <div className={styles.recentNews}>
       <h2>Recent news</h2>
       <div className={styles.newsBlock}>
-        <NewsCard card={newsDbData[0]} />
-        <NewsCard card={newsDbData[1]} minCard />
-        <NewsCard card={newsDbData[2]} minCard />
+        <NewsCard card={newsData[0]} />
+        <NewsCard card={newsData[1]} minCard />
+        <NewsCard card={newsData[2]} minCard />
       </div>
       <div className={styles.footer}>
         <h3>Explore all our news posts</h3>
