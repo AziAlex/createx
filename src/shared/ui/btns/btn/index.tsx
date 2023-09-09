@@ -20,6 +20,7 @@ const Button: FC<IProps> = ({ title, fill, solid, size, disabled, ...props }) =>
       disabled ? cl.disabled : null,
     ].join(' ')}
     {...props}
+    disabled={disabled}
   >
     {title}
   </button>
