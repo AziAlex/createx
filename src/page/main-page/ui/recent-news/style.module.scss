@@ -28,5 +28,9 @@
     justify-content: center;
     gap: 40px;
     margin-bottom: responsive(40px, 120px);
+
+    @media (max-width: 380px) {
+      flex-wrap: wrap;
+    }
   }
 }
