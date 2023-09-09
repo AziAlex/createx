@@ -2,6 +2,7 @@ import Wrap from '@/shared/ui/wrap'
 import Button from '@/shared/ui/btns/btn'
 import NewsCard from '@/entities/news-card'
 import { newsData } from '@/shared/data/newsDb'
+import FooterBlock from '@/shared/ui/footer-block'
 
 import styles from './style.module.scss'
 
@@ -14,10 +15,9 @@ const RecentNews = () => (
         <NewsCard card={newsData[1]} minCard />
         <NewsCard card={newsData[2]} minCard />
       </div>
-      <div className={styles.footer}>
-        <h3>Explore all our news posts</h3>
+      <FooterBlock title='Explore all our news posts'>
         <Button title='View all news' size='large' solid />
-      </div>
+      </FooterBlock>
     </div>
   </Wrap>
 )

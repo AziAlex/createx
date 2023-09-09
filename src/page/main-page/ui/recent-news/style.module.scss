@@ -5,6 +5,8 @@
     margin-bottom: responsive(24px, 60px);
   }
 
+  padding-bottom: responsive(40px, 120px);
+
   .newsBlock {
     display: grid;
     grid-template-columns: 1.5fr 0.5fr;
@@ -20,17 +22,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-  }
-
-  .footer {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: responsive(40px, 120px);
-
-    @media (max-width: 380px) {
-      flex-wrap: wrap;
     }
   }
 }
