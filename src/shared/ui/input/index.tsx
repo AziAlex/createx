@@ -7,7 +7,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 
 const Input: React.FC<InputProps> = ({ label, labelHtmlFor, ...props }) => (
   <div className={styles.input}>
-    {label && <label htmlFor={labelHtmlFor}>{label}</label>}
+    {label && <label htmlFor={labelHtmlFor}>{label}{props.required ? ' *' : ''}</label>}
     <input {...props} />
   </div>
 )

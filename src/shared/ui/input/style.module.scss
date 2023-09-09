@@ -23,6 +23,7 @@
     border: 1px solid $input-border;
     border-radius: 4px;
     background: $input-bg;
+    outline: none;
   }
 
   @media screen and (max-width: 900px) {
