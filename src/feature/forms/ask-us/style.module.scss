@@ -17,10 +17,20 @@
 
 @media screen and (max-width: 900px) {
   .form__wrapper {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
     .flex__block {
-      display: block;
+      flex-direction: column;
+
+      &:first-child {
+        gap: 30px;
+      }
+
+      &:last-child {
+        gap: 15px;
+      }
     }
 
     button {
