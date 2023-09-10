@@ -4,10 +4,12 @@
 .form {
   width: 100%;
   max-width: 495px;
+
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  @include paddingX(0px, 40px);
+  align-items: center;
+
+  @include paddingX(20px, 40px);
   @include paddingY(20px, 48px);
 
   background-color: $white;
@@ -15,7 +17,30 @@
   border-radius: 4px;
   box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 26px 24px -10px rgba(30, 33, 44, 0.10), 0px 60px 80px -20px rgba(30, 33, 44, 0.16);
 
-  .footer {
+  @media (max-width: 530px) {
+    max-width: 530px;
+    border: none;
+  }
 
+  h3 {
+    margin-bottom: 53px;
+  }
+
+  .inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: responsive(40px, 50px);
+    margin-bottom: 20px;
+
+    input {
+      font-size: 18px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
   }
 }

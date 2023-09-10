@@ -5,30 +5,41 @@ interface IFormInputs {
   labelHtmlFor: string
   placeholder: string
   type: React.HTMLInputTypeAttribute
+  required?: boolean
   message?: boolean
 }
 
 export const FormInputs: IFormInputs[] = [
   {
-    label: 'Name*',
+    label: 'Name',
     labelHtmlFor: 'name',
     placeholder: 'Your name',
     type: 'text',
+    required: true,
   }, {
-    label: 'Phone*',
+    label: 'Phone',
     labelHtmlFor: 'phone',
     placeholder: 'Your phone number',
-    type: 'number',
+    type: 'text',
   }, {
     label: 'Email',
     labelHtmlFor: 'email',
     placeholder: 'Your working email',
     type: 'email',
+    required: true,
   }, {
-    label: 'Message*',
-    labelHtmlFor: 'name',
+    label: 'Message',
+    labelHtmlFor: 'message',
     placeholder: 'Your message',
     type: 'text',
     message: true,
+    required: true,
   },
 ]
+
+export const initialValues = {
+  name: '',
+  phone: '',
+  email: '',
+  message: '',
+}
