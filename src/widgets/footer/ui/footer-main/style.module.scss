@@ -1,0 +1,49 @@
+@import "@/var";
+@import "@/mixins";
+
+.main {
+  display: flex;
+  gap: responsive(0px, 125px);
+  margin-bottom: 46px;
+
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: responsive(12px, 20px);
+  }
+
+  @media (max-width: 535px) {
+    grid-column: 1;
+  }
+
+  ul {
+    list-style: none;
+    font-size: 16px;
+    color: $white;
+
+    & > li {
+      line-height: 160%;
+
+      &:first-child {
+        font-weight: 700;
+        margin-bottom: 13px;
+        line-height: 150%;
+        letter-spacing: 1px;
+
+        span {
+          opacity: 1;
+          transition: 0.25s ease-in-out;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      span {
+        font-weight: 400;
+        opacity: 0.6;
+      }
+    }
+  }
+}

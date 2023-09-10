@@ -41,6 +41,10 @@
   .info {
     padding: responsive(8px, 24px);
 
+    h4 {
+      text-align: left;
+    }
+
     .subInfo {
       display: flex;
       gap: responsive(4px, 12px);
