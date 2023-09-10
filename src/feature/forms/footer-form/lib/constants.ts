@@ -6,7 +6,6 @@ interface IFormInputs {
   placeholder: string
   type: React.HTMLInputTypeAttribute
   required?: boolean
-  message?: boolean
 }
 
 export const FormInputs: IFormInputs[] = [
@@ -32,7 +31,6 @@ export const FormInputs: IFormInputs[] = [
     labelHtmlFor: 'message',
     placeholder: 'Your message',
     type: 'text',
-    message: true,
     required: true,
   },
 ]

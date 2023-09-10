@@ -1,13 +1,14 @@
 'use client'
 
-import React, { useState } from 'react'
-import Button from '@/shared/ui/btns/btn'
-import Input from '../../../shared/ui/inputs/input'
-import { initValues } from './lib/constants'
+import React from 'react'
 
-import styles from './style.module.scss'
+import Button from '@/shared/ui/btns/btn'
+import { initValues } from './lib/constants'
 import { handleFormSubmit } from '@/shared/util/handlers/handle-submit'
 import { useForm } from '@/shared/hooks/useForm'
+import Input from '@/shared/ui/inputs/input'
+
+import styles from './style.module.scss'
 
 const AskUsForm = () => {
   const { form, formDisable, errorPhone, handleChange } = useForm(initValues)

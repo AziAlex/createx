@@ -1,17 +1,16 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
-import styles from './style.module.scss'
 import { FormInputs, initialValues } from '@/feature/forms/footer-form/lib/constants'
-import Input from '../../../shared/ui/inputs/input'
+import { handleFormSubmit } from '@/shared/util/handlers/handle-submit'
+import { useForm } from '@/shared/hooks/useForm'
 import CheckBox from '@/shared/ui/btns/check-box'
 import Button from '@/shared/ui/btns/btn'
 import Textarea from '@/shared/ui/inputs/textarea'
-import { isValuedPhone } from '@/shared/util/isValuePhoneNumber'
-import { isFormRequired } from '@/shared/util/isFormRequired'
-import { handleFormSubmit } from '@/shared/util/handlers/handle-submit'
-import { useForm } from '@/shared/hooks/useForm'
+import Input from '@/shared/ui/inputs/input'
+
+import styles from './style.module.scss'
 
 const FormFooter = () => {
   const { form, formDisable, errorPhone, handleChange } = useForm(initialValues)
