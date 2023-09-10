@@ -16,11 +16,20 @@ import {
   IconLike,
   IconSlippers,
   IconHand,
-  IconPlay, IconHeart, IconFacebook, IconMessanger, IconTwitter, IconWhatsapp, IconYouTube,
+  IconPlay,
+  IconConstruction,
+  IconPainting,
+  IconPlan,
+  IconPantone,
+  IconHeart,
+  IconFacebook,
+  IconMessanger,
+  IconTwitter,
+  IconWhatsapp,
+  IconYouTube,
 } from '@/shared/svg/Icon'
 
 export type IconName =
-  | 'logo'
   | 'arrowConvert'
   | 'arrowDown'
   | 'arrowLeft'
@@ -29,12 +38,16 @@ export type IconName =
   | 'chat'
   | 'chevronsDown'
   | 'chevronsTop'
+  | 'construction'
   | 'cross'
   | 'hand'
   | 'like'
+  | 'logo'
   | 'menu'
+  | 'painting'
+  | 'pantone'
   | 'phone'
-  | 'slippers'
+  | 'plan'
   | 'play'
   | 'heart'
   | 'facebook'
@@ -42,6 +55,7 @@ export type IconName =
   | 'twitter'
   | 'whatsapp'
   | 'youtube'
+  | 'slippers'
 
 interface IProps {
   name: IconName
@@ -58,12 +72,17 @@ const Icon: FC<IProps> = ({ name, className }) => {
     chat: <IconChat className={className} />,
     chevronsDown: <IconChevronsDown className={className} />,
     chevronsTop: <IconChevronsTop className={className} />,
+    construction: <IconConstruction className={className} />,
     cross: <IconCross className={className} />,
     hand: <IconHand className={className} />,
     like: <IconLike className={className} />,
     logo: <IconLogo className={className} />,
     menu: <IconBurgerMenu className={className} />,
+    painting: <IconPainting className={className} />,
+    pantone: <IconPantone className={className} />,
     phone: <IconPhone className={className} />,
+    plan: <IconPlan className={className} />,
+    play: <IconPlay className={className} />,
     slippers: <IconSlippers className={className} />,
     play: <IconPlay className={className} />,
     heart: <IconHeart className={className} />,
