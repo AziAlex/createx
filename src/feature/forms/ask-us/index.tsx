@@ -2,39 +2,26 @@
 
 import React, { useState } from 'react'
 import Button from '@/shared/ui/btns/btn'
-import Input from '@/shared/ui/input'
+import Input from '../../../shared/ui/inputs/input'
 import { initValues } from './lib/constants'
 
 import styles from './style.module.scss'
+import { handleFormSubmit } from '@/shared/util/handlers/handle-submit'
+import { useForm } from '@/shared/hooks/useForm'
 
 const AskUsForm = () => {
-  const [values, setValues] = useState(initValues)
-  const error = Object.values(values).some((value) => !value.length)
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target
-    setValues((prevValues) => ({
-      ...prevValues,
-      [name]: value,
-    }))
-  }
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    alert(JSON.stringify(values, null, 2))
-    setValues(initValues)
-  }
+  const { form, formDisable, errorPhone, handleChange } = useForm(initValues)
 
   return (
-    <form className={styles.form__wrapper} onSubmit={handleSubmit}>
+    <form className={styles.form__wrapper}>
       <div className={styles.flex__block}>
         <Input
           label='Name'
           type='text'
           placeholder='Your name'
           name='name'
-          onChange={handleChange}
-          value={values.name}
+          onChange={(e) => handleChange(e, 'name')}
+          value={form.name}
           required
         />
 
@@ -43,9 +30,9 @@ const AskUsForm = () => {
           type='phone'
           placeholder='Your phone'
           name='phone'
-          onChange={handleChange}
-          value={values.phone}
-          required
+          onChange={(e) => handleChange(e, 'phone')}
+          value={form.phone}
+          error={errorPhone}
         />
       </div>
 
@@ -55,8 +42,8 @@ const AskUsForm = () => {
           type='text'
           placeholder='Your message'
           name='message'
-          onChange={handleChange}
-          value={values.message}
+          onChange={(e) => handleChange(e, 'message')}
+          value={form.message}
           required
         />
 
@@ -64,7 +51,8 @@ const AskUsForm = () => {
           title='Send'
           size='regular'
           solid
-          disabled={error}
+          onClick={(e) => handleFormSubmit(e, form)}
+          disabled={formDisable}
         />
       </div>
     </form>
