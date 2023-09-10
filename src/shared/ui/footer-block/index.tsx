@@ -7,9 +7,11 @@ interface IProps {
   children: React.ReactNode
 }
 
-export const FooterBlock: FC<IProps> = ({ children, title }) => (
+const FooterBlock: FC<IProps> = ({ children, title }) => (
   <div className={styles.wrap}>
     <h3>{title}</h3>
     {children}
   </div>
 )
+
+export default FooterBlock

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Button from '@/shared/ui/btns/btn'
 import Wrap from '@/shared/ui/wrap'
-import { FooterBlock } from '@/shared/ui/footer-block'
+import FooterBlock from '@/shared/ui/footer-block'
 
 import Card from './card'
 import { cards } from './lib/constants'
