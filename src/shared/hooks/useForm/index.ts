@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
 
-import { isValuedPhone } from '@/shared/util/isValuePhoneNumber'
+import { isValuedPhone } from '@/shared/util/isValuedPhone'
 import { isFormRequired } from '@/shared/util/isFormRequired'
 
-interface FormValues {
-  [key: string]: string; // Здесь вы можете заменить 'any' на конкретный тип, если он известен
+interface IFormValues {
+  [key: string]: string
 }
 
 
-export const useForm = (initialValues: FormValues) => {
+export const useForm = (initialValues: IFormValues) => {
   const [form, setForm] = useState(initialValues)
   const [formDisable, setFormDisable] = useState(false)
   const [errorPhone, setErrorPhone] = useState(false)

@@ -20,30 +20,31 @@ const FormFooter = () => {
       <h3>A quick way to discuss details</h3>
       <div className={styles.inputs}>
         {FormInputs.map((item, index) => {
-          if (index === 3) return
-
-          return (
-            <Input
-              key={index}
+          if (item.labelHtmlFor !== 'message') {
+            return (
+              <Input
+                key={index}
+                label={item.label}
+                labelHtmlFor={item.labelHtmlFor}
+                placeholder={item.placeholder}
+                type={item.type}
+                required={item.required}
+                value={form[item.labelHtmlFor as keyof typeof form]}
+                onChange={(e) => handleChange(e, item.labelHtmlFor)}
+                error={item.labelHtmlFor === 'phone' && errorPhone}
+              />
+            )
+          } else return (
+            <Textarea
               label={item.label}
-              labelHtmlFor={item.labelHtmlFor}
               placeholder={item.placeholder}
-              type={item.type}
-              required={item.required}
+              name={item.labelHtmlFor}
               value={form[item.labelHtmlFor as keyof typeof form]}
               onChange={(e) => handleChange(e, item.labelHtmlFor)}
-              error={item.labelHtmlFor === 'phone' && errorPhone}
+              required
             />
           )
         })}
-        <Textarea
-          label={FormInputs[3].label}
-          placeholder={FormInputs[3].placeholder}
-          name={FormInputs[3].labelHtmlFor}
-          value={form[FormInputs[3].labelHtmlFor as keyof typeof form]}
-          onChange={(e) => handleChange(e, FormInputs[3].labelHtmlFor)}
-          required
-        />
       </div>
       <div className={styles.footer}>
         <CheckBox />

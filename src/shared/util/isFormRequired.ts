@@ -1,8 +1,8 @@
-interface Form {
-  [key: string]: string; // Здесь вы можете заменить 'any' на конкретный тип, если он известен
+interface IForm {
+  [key: string]: string;
 }
 
-export const isFormRequired = (form: Form, listUnRequired: string[]): boolean => {
+export const isFormRequired = (form: IForm, listUnRequired: string[]): boolean => {
   const newForm = { ...form }
 
   for (const key in newForm) {
@@ -11,7 +11,5 @@ export const isFormRequired = (form: Form, listUnRequired: string[]): boolean =>
     }
   }
 
-  return Object.keys(newForm).every((fieldName) => {
-    return newForm[fieldName].length
-  })
+  return Object.keys(newForm).every((fieldName) => newForm[fieldName].length)
 }

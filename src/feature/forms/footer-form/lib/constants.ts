@@ -8,6 +8,13 @@ interface IFormInputs {
   required?: boolean
 }
 
+export const initialValues = {
+  name: '',
+  phone: '',
+  email: '',
+  message: '',
+}
+
 export const FormInputs: IFormInputs[] = [
   {
     label: 'Name',
@@ -35,9 +42,3 @@ export const FormInputs: IFormInputs[] = [
   },
 ]
 
-export const initialValues = {
-  name: '',
-  phone: '',
-  email: '',
-  message: '',
-}
