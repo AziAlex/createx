@@ -1,0 +1,35 @@
+@import '@/mixins';
+
+.wrap {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: responsive(100px, 212px);
+  padding-bottom: responsive(40px, 80px);
+
+  .our_services {
+    .title {
+      margin-bottom: responsive(12px, 24px);
+    }
+
+    .text {
+      margin-bottom: responsive(30px, 60px);
+      font-size: responsive(12px, 18px);
+    }
+
+    .cards {
+      margin-bottom: responsive(40px, 85px);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: responsive(12px, 30px);
+
+      @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media screen and (max-width: 360px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
