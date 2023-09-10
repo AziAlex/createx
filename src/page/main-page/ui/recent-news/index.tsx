@@ -2,7 +2,7 @@ import Wrap from '@/shared/ui/wrap'
 import Button from '@/shared/ui/btns/btn'
 import NewsCard from '@/entities/news-card'
 import { newsData } from '@/shared/data/newsDb'
-import { FooterBlock } from '@/shared/ui/footer-block'
+import FooterBlock from '@/shared/ui/footer-block'
 
 import styles from './style.module.scss'
 
