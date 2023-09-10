@@ -45,12 +45,12 @@ export type IconName =
   | 'play'
   | 'slippers'
 
-interface Iprops {
+interface IProps {
   name: IconName
   className: string
 }
 
-const Icon: FC<Iprops> = ({ name, className }) => {
+const Icon: FC<IProps> = ({ name, className }) => {
   const icons: { [key in IconName]: React.ReactNode } = {
     arrowConvert: <IconArrowConvert className={className} />,
     arrowDown: <IconArrowDown className={className} />,
