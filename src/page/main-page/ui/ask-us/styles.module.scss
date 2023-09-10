@@ -6,6 +6,10 @@
   @include paddingY(20px, 48px);
   background-color: $white;
 
+  @media (max-width: 600px) {
+    padding: 30px 0;
+  }
+
   h3 {
     margin-bottom: responsive(30px, 60px);
   }
