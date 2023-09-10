@@ -26,9 +26,34 @@
     outline: none;
   }
 
+  textarea {
+    padding: 11px 0 12px 16px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid $input-border;
+    border-radius: 4px;
+    background: $input-bg;
+    outline: none;
+    font-size: 18px;
+  }
+
+  .error {
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    font-size: 14px;
+    color: red;
+  }
+
   @media screen and (max-width: 900px) {
     label {
       top: -20px;
     }
+  }
+}
+
+.message {
+  input {
+    white-space: pre-wrap;
   }
 }

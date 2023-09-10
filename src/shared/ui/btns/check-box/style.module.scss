@@ -1,0 +1,25 @@
+@import "@/var";
+
+.checkBox {
+  margin-top: 2px;
+  min-width: 16px;
+  height: 15px;
+  border: 1px solid $gray-400;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.active {
+  background-color: $btn;
+  position: relative;
+
+  &:before  {
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    content: '\2713';
+    color: #fff;
+    font-size: 16px
+  }
+}
