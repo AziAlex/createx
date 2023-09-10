@@ -8,6 +8,7 @@ export * from './ui/additional/IconPhone'
 export * from './ui/additional/IconPlan'
 export * from './ui/additional/IconPlay'
 export * from './ui/additional/IconSlippers'
+export  * from './ui/additional/IconHeart'
 
 export * from './ui/arrows/IconArrowDown'
 export * from './ui/arrows/IconArrowLeft'

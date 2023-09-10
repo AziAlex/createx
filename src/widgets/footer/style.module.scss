@@ -1,0 +1,66 @@
+@import "@/var";
+@import "@/mixins";
+
+.footer {
+  background-color: $gray-900;
+  @include paddingY(30px, 80px);
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      flex-wrap: wrap;
+      gap: responsive(20px, 60px);
+      max-width: 493px;
+
+      &:first-child {
+
+        .logo {
+          fill: $white;
+          width: 142px;
+          height: 24px;
+        }
+      }
+    }
+
+    .right {
+      width: 100%;
+      max-width: 495px;
+
+      h4 {
+        color: $white;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        margin-bottom: responsive(12px, 24px);
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: responsive(8px, 16px);
+
+      li > {
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  .main {
+
+  }
+
+  .bottom {
+
+  }
+}

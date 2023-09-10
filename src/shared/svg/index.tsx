@@ -84,7 +84,6 @@ const Icon: FC<IProps> = ({ name, className }) => {
     plan: <IconPlan className={className} />,
     play: <IconPlay className={className} />,
     slippers: <IconSlippers className={className} />,
-    play: <IconPlay className={className} />,
     heart: <IconHeart className={className} />,
     facebook: <IconFacebook className={className} />,
     messenger: <IconMessanger className={className} />,

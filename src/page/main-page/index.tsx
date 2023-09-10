@@ -7,6 +7,7 @@ import VideoBlock from '@/page/main-page/ui/video-block'
 import RecentNews from '@/page/main-page/ui/recent-news'
 import OurServices from './ui/our-services'
 import FooterForm from '@/widgets/footer-form'
+import Footer from '@/widgets/footer'
 
 const ManiPage = () => (
   <>
@@ -19,6 +20,7 @@ const ManiPage = () => (
     <ClientPartners />
     <RecentNews />
     <FooterForm />
+    <Footer/>
   </>
 )
 

@@ -1,0 +1,19 @@
+@import "@/var";
+@import "@/mixins";
+
+.form {
+  display: flex;
+  height: 44px;
+  margin-bottom: responsive(8px, 16px);
+
+  input {
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.12);
+    font-size: 18px;
+    color: $white;
+  }
+
+  button {
+    height: 100%;
+  }
+}
