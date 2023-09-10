@@ -17,10 +17,13 @@ import {
   IconSlippers,
   IconHand,
   IconPlay,
+  IconConstruction,
+  IconPainting,
+  IconPlan,
+  IconPantone,
 } from '@/shared/svg/Icon'
 
 export type IconName =
-  | 'logo'
   | 'arrowConvert'
   | 'arrowDown'
   | 'arrowLeft'
@@ -29,13 +32,18 @@ export type IconName =
   | 'chat'
   | 'chevronsDown'
   | 'chevronsTop'
+  | 'construction'
   | 'cross'
   | 'hand'
   | 'like'
+  | 'logo'
   | 'menu'
+  | 'painting'
+  | 'pantone'
   | 'phone'
-  | 'slippers'
+  | 'plan'
   | 'play'
+  | 'slippers'
 
 interface IProps {
   name: IconName
@@ -52,14 +60,18 @@ const Icon: FC<IProps> = ({ name, className }) => {
     chat: <IconChat className={className} />,
     chevronsDown: <IconChevronsDown className={className} />,
     chevronsTop: <IconChevronsTop className={className} />,
+    construction: <IconConstruction className={className} />,
     cross: <IconCross className={className} />,
     hand: <IconHand className={className} />,
     like: <IconLike className={className} />,
     logo: <IconLogo className={className} />,
     menu: <IconBurgerMenu className={className} />,
+    painting: <IconPainting className={className} />,
+    pantone: <IconPantone className={className} />,
     phone: <IconPhone className={className} />,
-    slippers: <IconSlippers className={className} />,
+    plan: <IconPlan className={className} />,
     play: <IconPlay className={className} />,
+    slippers: <IconSlippers className={className} />,
   }
 
   return <>{icons[name]}</>

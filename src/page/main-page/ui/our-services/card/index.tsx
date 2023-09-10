@@ -1,20 +1,22 @@
 import { FC } from 'react'
+import { TCard } from '../lib/constants'
 import Icon from '@/shared/svg'
-import { Card } from '../lib/constants'
 
 import styles from './style.module.scss'
+import Image from 'next/image'
 
 type TProps = {
-  card: Card
+  card: TCard
 }
 
 const Card: FC<TProps> = ({ card }) => (
   <div className={styles.card}>
-    <div className={styles.img__wrapper}>
+    <div>
       <Icon className={styles.icon} name={card.img} />
+      <h4 className={styles.title}>{card.title}</h4>
     </div>
-    <h3>{card.title}</h3>
-    <p className={styles.text}>{card.text}</p>
+
+    <Image src={'/main-page/card-bg.jpg'} alt="bg" fill />
   </div>
 )
 

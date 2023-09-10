@@ -1,0 +1,57 @@
+@import '@/var';
+
+.card {
+  position: relative;
+  border-radius: 4px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  box-shadow:
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    transition: 0.3s ease-in-out;
+
+    .icon {
+      transition: fill 0.3s ease-in-out;
+    }
+
+    .title {
+      transition: color 0.3s ease-in-out;
+      font-size: 20px;
+      line-height: 150%; 
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+      .icon {
+        fill: $white;
+      }
+
+      .title {
+        color: $white;
+      }
+    }
+  }
+
+  img {
+    object-fit: cover;
+    z-index: -10;
+  }
+
+  .icon {
+    width: 52px;
+    height: 52px;
+    fill: $orange;
+  }
+}
