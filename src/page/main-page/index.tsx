@@ -8,6 +8,8 @@ import RecentNews from '@/page/main-page/ui/recent-news'
 import OurServices from '@/page/main-page/ui/our-services'
 import FooterForm from '@/widgets/footer-form'
 import ProjectShowcase from '@/page/main-page/ui/project-showcase'
+import SomeFacts from '@/page/main-page/ui/Some-facts-and-figures'
+import Footer from '@/widgets/footer'
 
 const ManiPage = () => (
   <>
@@ -19,8 +21,10 @@ const ManiPage = () => (
     <OurServices />
     <ProjectShowcase />
     <ClientPartners />
+    <SomeFacts />
     <RecentNews />
     <FooterForm />
+    <Footer/>
   </>
 )
 

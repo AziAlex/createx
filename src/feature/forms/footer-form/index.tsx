@@ -36,6 +36,7 @@ const FormFooter = () => {
             )
           } else return (
             <Textarea
+              key={index}
               label={item.label}
               placeholder={item.placeholder}
               name={item.labelHtmlFor}
