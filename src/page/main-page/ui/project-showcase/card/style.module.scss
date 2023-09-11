@@ -1,0 +1,44 @@
+@import '@/var';
+@import '@/mixins';
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 390px;
+  height: 440px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    max-height: 345px;
+    object-fit: cover;
+  }
+
+  .content {
+    padding-top: 16px;
+    margin-bottom: 24px;
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    background: $white;
+    transition: 0.3s ease-in-out;
+
+    .description {
+      margin-bottom: 24px;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+  .btn {
+    text-align: center;
+  }
+
+  &:hover {
+    .content {
+      bottom: 0;
+    }
+  }
+}

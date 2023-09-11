@@ -1,0 +1,23 @@
+@import '@/var';
+@import '@/mixins';
+
+.showcase {
+  padding-top: responsive(60px, 120px);
+  padding-bottom: responsive(60px, 125px);
+
+  .title {
+    margin-bottom: responsive(30px, 60px);
+    max-width: 705px;
+    text-align: left;
+  }
+
+  .cards {
+    margin-bottom: 85px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    left: 100px;
+  }
+}
