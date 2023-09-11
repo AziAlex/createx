@@ -1,6 +1,7 @@
-@import '../../app/style/variable.scss';
+@import "@/var";
 
 .logo {
+  fill: $gray-900;
   width: 130px;
   height: 22px;
 }

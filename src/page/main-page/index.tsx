@@ -8,6 +8,7 @@ import RecentNews from '@/page/main-page/ui/recent-news'
 import OurServices from './ui/our-services'
 import FooterForm from '@/widgets/footer-form'
 import SomeFacts from '@/page/main-page/ui/Some-facts-and-figures'
+import Footer from '@/widgets/footer'
 
 const ManiPage = () => (
   <>
@@ -21,6 +22,7 @@ const ManiPage = () => (
     <SomeFacts />
     <RecentNews />
     <FooterForm />
+    <Footer/>
   </>
 )
 
