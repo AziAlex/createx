@@ -1,9 +1,10 @@
 import React from 'react'
 
-import styles from './style.module.scss'
 import Image from 'next/image'
 import Wrap from '@/shared/ui/wrap'
 import { someFactsInfo } from '@/page/main-page/ui/Some-facts-and-figures/lib/constants'
+
+import styles from './style.module.scss'
 
 const SomeFacts = () => (
   <div className={styles.wrap}>
