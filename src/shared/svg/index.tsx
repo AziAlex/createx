@@ -21,6 +21,12 @@ import {
   IconPainting,
   IconPlan,
   IconPantone,
+  IconHeart,
+  IconFacebook,
+  IconMessanger,
+  IconTwitter,
+  IconWhatsapp,
+  IconYouTube,
 } from '@/shared/svg/Icon'
 
 export type IconName =
@@ -43,6 +49,12 @@ export type IconName =
   | 'phone'
   | 'plan'
   | 'play'
+  | 'heart'
+  | 'facebook'
+  | 'messenger'
+  | 'twitter'
+  | 'whatsapp'
+  | 'youtube'
   | 'slippers'
 
 interface IProps {
@@ -72,6 +84,12 @@ const Icon: FC<IProps> = ({ name, className }) => {
     plan: <IconPlan className={className} />,
     play: <IconPlay className={className} />,
     slippers: <IconSlippers className={className} />,
+    heart: <IconHeart className={className} />,
+    facebook: <IconFacebook className={className} />,
+    messenger: <IconMessanger className={className} />,
+    twitter: <IconTwitter className={className} />,
+    whatsapp: <IconWhatsapp className={className} />,
+    youtube: <IconYouTube className={className} />,
   }
 
   return <>{icons[name]}</>
