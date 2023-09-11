@@ -6,10 +6,10 @@ const { Command } = require('commander')
 
 const program = new Command()
 
-const dirsWithUi = ['shared'];
+const dirsWithUi = ['shared']
 
 function getTargetPath(dirname, component) {
-  const baseDir = dirsWithUi.includes(dirname) ? `${dirname}/ui` : dirname 
+  const baseDir = dirsWithUi.includes(dirname) ? `${dirname}/ui` : dirname
   return path.join(process.cwd(), 'src', baseDir, component)
 }
 
@@ -26,7 +26,9 @@ program
       )
 
       const indexPath = path.join(dirPath, 'index.tsx')
-      const indexCode = `const index = () => {
+      const indexCode = `import styles from './style.module.scss'
+      
+const index = () => {
   return (
     <div>index</div>
   )
