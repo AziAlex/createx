@@ -7,7 +7,7 @@ import { someFactsInfo } from '@/page/main-page/ui/Some-facts-and-figures/lib/co
 
 const SomeFacts = () => (
   <div className={styles.wrap}>
-    <Image src='/main-page/some-facts.png' alt='some-facts' width={1066} height={859} />
+    <Image src='/main-page/some-facts.png' alt='some-facts' width={560} height={670} />
     <Wrap>
       <div className={styles.wrapContent}>
         <h2>Some facts and figures</h2>
