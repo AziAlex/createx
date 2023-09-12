@@ -16,8 +16,7 @@ const OurServices = () => (
       <div className={styles.our_services}>
         <TitleBlock
           title="Our services"
-          text="
-          Createx Construction Bureau is a construction giant with a full range of construction services.  "
+          subtitle="Createx Construction Bureau is a construction giant with a full range of construction services."
         />
 
         <div className={styles.cards}>

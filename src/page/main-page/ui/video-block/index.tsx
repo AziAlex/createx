@@ -40,7 +40,7 @@ const VideoBlock = () => {
         <div className={cl.videoBlock}>
           <TitleBlock
             title="We are Createx Construction Bureau"
-            text="We are rightfully considered to be the best construction company in the USA."
+            subtitle="We are rightfully considered to be the best construction company in the USA."
           />
 
           <div className={cl.img}>

@@ -1,19 +1,17 @@
 @import '@/var';
 @import '@/mixins';
 
-.title__block {
-  .title {
-    margin-bottom: responsive(0px, 24px);
-  }
+.title {
+  margin-bottom: responsive(0px, 24px);
+}
 
-  .text {
-    margin-bottom: responsive(24px, 58px);
-    text-align: center;
-    font-size: responsive(16px, 18px);
+.subtitle {
+  margin-bottom: responsive(24px, 60px);
+  text-align: center;
+  font-size: responsive(16px, 18px);
 
-    @media screen and (max-width: 900px) {
-      margin: 0 auto;
-      max-width: 400px;
-    }
+  @media screen and (max-width: 900px) {
+    margin: 0 auto;
+    max-width: 400px;
   }
 }

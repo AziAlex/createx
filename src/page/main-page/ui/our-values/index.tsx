@@ -11,7 +11,7 @@ const OurValues = () => (
     <div className={cl.our_values}>
       <TitleBlock
         title="Our core values"
-        text="Our mission is to set the highest standards for construction sphere."
+        subtitle="Our mission is to set the highest standards for construction sphere."
       />
 
       <div className={cl.cards__wrapper}>

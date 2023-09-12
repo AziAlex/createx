@@ -4,14 +4,14 @@ import styles from './style.module.scss'
 
 type TProps = {
   title: string
-  text: string
+  subtitle: string
 }
 
-const TitleBlock: FC<TProps> = ({ title, text }) => (
-  <div className={styles.title__block}>
+const TitleBlock: FC<TProps> = ({ title, subtitle }) => (
+  <>
     <h2 className={styles.title}>{title}</h2>
-    <p className={styles.text}>{text}</p>
-  </div>
+    <p className={styles.subtitle}>{subtitle}</p>
+  </>
 )
 
 export default TitleBlock
