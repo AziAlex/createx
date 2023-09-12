@@ -4,13 +4,16 @@ import Menu from './ui/menu'
 import Icon from '@/shared/svg'
 
 import cl from './style.module.scss'
+import Link from 'next/link'
 
 const Header = () => (
   <Wrap>
     <div className={cl.header}>
       <div className={cl.navigation}>
         <div>
-          <Icon name="logo" className={cl.logo}/>
+          <Link href="/">
+            <Icon name="logo" className={cl.logo}/>
+          </Link>
         </div>
 
         <nav>

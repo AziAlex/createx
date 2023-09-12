@@ -1,0 +1,38 @@
+@import "@/mixins";
+
+.headerWrap {
+  position: relative;
+  height: 600px;
+
+  @media (max-width: 1230px) {
+    height: fit-content;
+    padding-bottom: 60px;
+  }
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    height: 600px;
+
+    @media (max-width: 1230px) {
+      height: 100%;
+    }
+  }
+
+  .content {
+    max-width: 600px;
+
+    h1 {
+      font-size: responsive(48px, 72px);
+      line-height: 130%;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: responsive(16px, 20px);
+    }
+  }
+
+}
