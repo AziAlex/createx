@@ -1,8 +1,10 @@
 @import "@/mixins";
+@import "@/var";
 
 .headerWrap {
   position: relative;
   height: 600px;
+  background-color: $gray-200;
 
   @media (max-width: 1230px) {
     height: fit-content;

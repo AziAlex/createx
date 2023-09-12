@@ -11,7 +11,7 @@ interface IProps {
   img: string
   title: string
   description: string
-  imgWidth?: number
+  imgWidth: number
 }
 
 const HeaderWrap: FC<IProps> = ({ children, img, title, description, imgWidth }) => (
