@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Button from '@/shared/ui/btns/btn'
 import Wrap from '@/shared/ui/wrap'
+import TitleBlock from '@/shared/ui/title-block'
 import FooterBlock from '@/shared/ui/footer-block'
 
 import Card from './card'
@@ -13,11 +14,10 @@ const OurServices = () => (
     <Image src={'/main-page/bg-image.png'} alt="bg" fill />
     <Wrap>
       <div className={styles.our_services}>
-        <h2 className={styles.title}>Our services</h2>
-        <p className={styles.text}>
-          Createx Construction Bureau is a construction giant with a full range
-          of construction services.
-        </p>
+        <TitleBlock
+          title="Our services"
+          subtitle="Createx Construction Bureau is a construction giant with a full range of construction services."
+        />
 
         <div className={styles.cards}>
           {cards.map((card, idx) => (

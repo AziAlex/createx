@@ -7,6 +7,7 @@ import Wrap from '@/shared/ui/wrap'
 import Image from 'next/image'
 import img from '/public/main-page/video-block.jpg'
 import Icon from '@/shared/svg'
+import TitleBlock from '@/shared/ui/title-block'
 import UseResizeVideo from '@/page/main-page/ui/video-block/lib/hooks'
 
 import cl from './style.module.scss'
@@ -37,25 +38,23 @@ const VideoBlock = () => {
     <>
       <Wrap>
         <div className={cl.videoBlock}>
-          <h2>We are Createx Construction Bureau</h2>
-          <p>We are rightfully considered to be the best construction company in the USA.</p>
+          <TitleBlock
+            title="We are Createx Construction Bureau"
+            subtitle="We are rightfully considered to be the best construction company in the USA."
+          />
+
           <div className={cl.img}>
-            <Image src={img} alt='video' width={1230} height={500} />
+            <Image src={img} alt="video" width={1230} height={500} />
             <div className={cl.play} onClick={() => setVideoWatch(true)}>
-              <Icon name='play' className={cl.play} />
+              <Icon name="play" className={cl.play} />
             </div>
           </div>
         </div>
       </Wrap>
+
       {videoWatch && (
-        <div
-          className={cl.videoWrap}
-          onClick={() => setVideoWatch(false)}
-        >
-          <YouTube
-            videoId='cjs-sfPoWWU'
-            opts={videoConfig}
-          />
+        <div className={cl.videoWrap} onClick={() => setVideoWatch(false)}>
+          <YouTube videoId="cjs-sfPoWWU" opts={videoConfig} />
         </div>
       )}
       <UseResizeVideo setVideoConfig={setVideoConfig} />

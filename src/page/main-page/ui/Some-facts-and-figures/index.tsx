@@ -12,6 +12,7 @@ const SomeFacts = () => (
     <Wrap>
       <div className={styles.wrapContent}>
         <h2>Some facts and figures</h2>
+
         <ul>
           {someFactsInfo.map((item, idx) => (
             <li key={idx}>
