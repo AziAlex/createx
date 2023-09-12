@@ -7,17 +7,18 @@ import Card from './card'
 import { cards } from './lib/constants'
 
 import styles from './style.module.scss'
+import TitleBlock from '@/shared/ui/title-block'
 
 const OurServices = () => (
   <div className={styles.wrap}>
     <Image src={'/main-page/bg-image.png'} alt="bg" fill />
     <Wrap>
       <div className={styles.our_services}>
-        <h2 className={styles.title}>Our services</h2>
-        <p className={styles.text}>
-          Createx Construction Bureau is a construction giant with a full range
-          of construction services.
-        </p>
+        <TitleBlock
+          title="Our services"
+          text="
+          Createx Construction Bureau is a construction giant with a full range of construction services.  "
+        />
 
         <div className={styles.cards}>
           {cards.map((card, idx) => (
