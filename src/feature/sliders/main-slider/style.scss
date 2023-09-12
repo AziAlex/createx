@@ -2,6 +2,7 @@
 @import "@/mixins";
 
 .slick-slider {
+  margin-top: -6px;
   position: relative;
   margin-bottom: responsive(50px, 120px);
 

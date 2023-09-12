@@ -16,9 +16,10 @@
   width: fit-content;
 
   &.large {
-    @include paddingY(8px, 15px);
     @include paddingX(16px, 40px);
     font-size: 16px;
+    font-weight: 700;
+    line-height: 52px;
 
     @media (max-width: 350px) {
       letter-spacing: 0;
