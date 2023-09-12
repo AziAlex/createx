@@ -1,10 +1,10 @@
 import React from 'react'
+import TitleBlock from '@/shared/ui/title-block'
 import Wrap from '@/shared/ui/wrap'
 import CardView from './card'
 import { cards } from './lib/constants'
 
 import cl from './style.module.scss'
-import TitleBlock from '@/shared/ui/title-block'
 
 const OurValues = () => (
   <Wrap>

@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import Button from '@/shared/ui/btns/btn'
 import Wrap from '@/shared/ui/wrap'
+import TitleBlock from '@/shared/ui/title-block'
 import FooterBlock from '@/shared/ui/footer-block'
 
 import Card from './card'
 import { cards } from './lib/constants'
 
 import styles from './style.module.scss'
-import TitleBlock from '@/shared/ui/title-block'
 
 const OurServices = () => (
   <div className={styles.wrap}>

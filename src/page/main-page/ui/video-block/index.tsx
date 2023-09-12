@@ -7,10 +7,10 @@ import Wrap from '@/shared/ui/wrap'
 import Image from 'next/image'
 import img from '/public/main-page/video-block.jpg'
 import Icon from '@/shared/svg'
+import TitleBlock from '@/shared/ui/title-block'
 import UseResizeVideo from '@/page/main-page/ui/video-block/lib/hooks'
 
 import cl from './style.module.scss'
-import TitleBlock from '@/shared/ui/title-block'
 
 const initConfig = {
   height: '600',
