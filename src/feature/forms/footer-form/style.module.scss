@@ -23,24 +23,38 @@
   }
 
   h3 {
-    margin-bottom: 53px;
+    margin-bottom: 51px;
   }
 
   .inputs {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: responsive(40px, 50px);
-    margin-bottom: 20px;
+    gap: responsive(40px, 49px);
+    margin-bottom: 16px;
 
     input {
       font-size: 18px;
+      max-height: 44px;
+    }
+
+    textarea {
+      height: 66px;
     }
   }
 
   .footer {
     display: flex;
     gap: 12px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
+
+    p {
+      font-size: 14px;
+      color: $gray-800;
+    }
+  }
+
+  button {
+
   }
 }
