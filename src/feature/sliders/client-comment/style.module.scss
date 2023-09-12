@@ -1,15 +1,19 @@
+@import "@/var";
+
 .slider {
   position: relative;
   width: 100%;
   height: fit-content;
 
-  .arrow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 24px;
-    height: 24px;
+  button {
+    &:first-child {
+      bottom: -14px;
+      right: 36px;
+    }
+
+    &:last-child {
+      bottom: -14px;
+      right: -12px;
+    }
   }
 }

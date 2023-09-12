@@ -1,23 +1,17 @@
-@import '@/var';
 @import '@/mixins';
 
 .showcase {
   padding-top: responsive(60px, 120px);
   padding-bottom: responsive(60px, 125px);
+  width: 1260px;
+
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
 
   .title {
-    margin-bottom: responsive(30px, 60px);
+    margin-bottom: responsive(50px, 60px);
     max-width: 705px;
     text-align: left;
-  }
-
-  .cards {
-    margin-bottom: 85px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  button {
-    left: 100px;
   }
 }

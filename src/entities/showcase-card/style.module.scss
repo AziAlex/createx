@@ -2,28 +2,47 @@
 @import '@/mixins';
 
 .card {
+  max-width: 390px;
+  padding: 0 2px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 390px;
   height: 440px;
-  border: 2px solid black;
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 1230px) {
+    padding: 0 5px;
+  }
+
+  @media (max-width: 600px) {
+    max-height: 300px;
+  }
+
   img {
-    max-height: 345px;
     object-fit: cover;
+
+    @media (max-width: 1230px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      max-height: 300px;
+    }
   }
 
   .content {
-    padding-top: 16px;
-    margin-bottom: 24px;
-    position: absolute;
-    bottom: -70px;
     width: 100%;
+    padding-top: 16px;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: -75px;
     background: $white;
     transition: 0.3s ease-in-out;
+
+    @media (max-width: 1230px) {
+      max-width: calc(100% - 10px);
+    }
 
     .description {
       margin-bottom: 24px;
@@ -39,6 +58,11 @@
   &:hover {
     .content {
       bottom: 0;
+
+      @media (max-width: 600px) {
+        bottom: -30px;
+      }
     }
   }
+
 }
