@@ -14,7 +14,8 @@
   img {
     position: absolute;
     object-fit: cover;
-    right: 0;
+    top: -1px;
+    right: -10px;
     height: 600px;
 
     @media (max-width: 1230px) {

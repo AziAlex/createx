@@ -15,7 +15,7 @@ const PageRouter = () => {
       {patchList.map((item, idx) => (
         <li key={idx}>
           <Link href={item === 'Homepage' ? '/' : `/${item}`}>
-            {idx === 0 ? '' : <span>/</span>}{item}
+            {idx === 0 ? '' : <span>/ </span>}{item}
           </Link>
         </li>
       ))}
