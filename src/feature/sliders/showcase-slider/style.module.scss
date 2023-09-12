@@ -1,0 +1,29 @@
+@import "@/var";
+@import "@/mixins";
+
+.slider {
+  .cards {
+    margin-bottom: 85px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button {
+    top: -96px;
+
+    @media (max-width: 1230px) {
+      top: -60px;
+    }
+    @media (max-width: 450px) {
+      top: -50px;
+    }
+
+    &:first-child {
+      right: 65px;
+    }
+
+    &:last-child {
+      right: 16px;
+    }
+  }
+}

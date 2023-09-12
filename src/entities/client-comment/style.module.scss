@@ -11,12 +11,15 @@
 
   p {
     color: $gray-800;
+    line-height: 160%;
     margin-bottom: responsive(15px, 24px);
   }
 
   h5 {
+    line-height: 160%;
+    font-size: 16px;
     color: $gray-900;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
 
   span {
