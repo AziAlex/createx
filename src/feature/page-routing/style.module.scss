@@ -10,6 +10,13 @@
 
   span {
     color: $gray-600;
+    padding-right: 4px;
+  }
+
+  li {
+    a {
+      text-transform: capitalize;
+    }
   }
 
   li:hover {
