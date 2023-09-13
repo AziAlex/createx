@@ -1,25 +1,19 @@
-import { IconName } from '@/shared/svg'
+import { TCard } from '@/entities/fact-card/lib/type'
 
-export type Card = {
-  img: IconName
-  title: string
-  text: string
- }
-
-export const cards: Card[] = [
+export const cards: TCard[] = [
   {
-    img: 'like',
-    title: 'Quality',
+    img: 'contract',
+    title: 'Fixed Terms & Cost',
     text: 'Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.',
   },
   {
-    img: 'hand',
-    title: 'Safety',
+    img: 'helmet',
+    title: 'Qualified Workers',
     text: 'Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.',
   },
   {
-    img: 'slippers',
-    title: 'Comfort',
+    img: 'camera',
+    title: 'Supervision & Control',
     text: 'Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.',
   },
 ]
