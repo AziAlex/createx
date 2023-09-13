@@ -2,6 +2,9 @@
 @import "@/mixins";
 
 .slider {
+  padding-top: 4px;
+  margin-bottom: 80px;
+
   .cards {
     margin-bottom: 85px;
     display: flex;
@@ -9,7 +12,7 @@
   }
 
   button {
-    top: -96px;
+    top: -93px;
 
     @media (max-width: 1230px) {
       top: -60px;
@@ -19,11 +22,11 @@
     }
 
     &:first-child {
-      right: 65px;
+      right: 66px;
     }
 
     &:last-child {
-      right: 16px;
+      right: 18px;
     }
   }
 }

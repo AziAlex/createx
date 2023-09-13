@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { TCard } from '../../page/main-page/ui/project-showcase/lib/constants'
+import { TCard } from '@/page/main-page/ui/project-showcase/lib/constants'
 
 import Image from 'next/image'
 import Button from '@/shared/ui/btns/btn'
