@@ -1,15 +1,17 @@
 import { FC } from 'react'
 import Icon from '@/shared/svg'
-import { Card } from '../lib/constants'
+import { TCard } from './lib/type'
 
 import styles from './style.module.scss'
+import clsx from 'clsx'
 
 type TProps = {
-  card: Card
+  card: TCard
+  darkTheme: boolean
 }
 
-const Card: FC<TProps> = ({ card }) => (
-  <div className={styles.card}>
+const FactCard: FC<TProps> = ({ card, darkTheme }) => (
+  <div className={clsx(styles.card, { [styles.darkTheme]: darkTheme })}>
     <div className={styles.img__wrapper}>
       <Icon className={styles.icon} name={card.img} />
     </div>
@@ -18,4 +20,4 @@ const Card: FC<TProps> = ({ card }) => (
   </div>
 )
 
-export default Card
+export default FactCard
