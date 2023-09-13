@@ -1,9 +1,10 @@
 import { FC } from 'react'
+
+import clsx from 'clsx'
 import Icon from '@/shared/svg'
 import { TCard } from './lib/type'
 
 import styles from './style.module.scss'
-import clsx from 'clsx'
 
 type TProps = {
   card: TCard

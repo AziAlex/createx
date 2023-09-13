@@ -14,11 +14,13 @@
   cursor: pointer;
   transition: .2s;
   white-space: nowrap;
+  width: fit-content;
 
   &.large {
     @include paddingX(16px, 40px);
     line-height: 52px;
     font-size: 16px;
+    font-weight: 700;
 
     @media (max-width: 350px) {
       letter-spacing: 0;
@@ -26,7 +28,6 @@
   }
 
   &.regular {
-    @include paddingY(6px, 12px);
     @include paddingX(12px, 32px);
     font-size: 14px;
   }
