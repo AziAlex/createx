@@ -6,7 +6,8 @@ import Wrap from '@/shared/ui/wrap'
 import { img1, img2, img10, img4, img3, img5, img6, img7, img8, img9, img11, img12 } from './lib/exports'
 import Slider from 'react-slick'
 import Image from 'next/image'
-
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 import styles from './style.module.scss'
 
 interface IProps {
