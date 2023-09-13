@@ -1,16 +1,30 @@
+@import '@/var';
 @import '@/mixins';
 
-.title {
-  margin-bottom: responsive(0px, 24px);
+.container {
+  .title {
+    margin-bottom: responsive(0px, 24px);
+  }
+
+  .subtitle {
+    margin-bottom: responsive(24px, 60px);
+    text-align: center;
+    font-size: responsive(16px, 18px);
+
+    @media screen and (max-width: 900px) {
+      margin: 0 auto;
+      max-width: 400px;
+    }
+  }
 }
 
-.subtitle {
-  margin-bottom: responsive(24px, 60px);
-  text-align: center;
-  font-size: responsive(16px, 18px);
+.darkTheme {
+  .title {
+    color: $white;
+  }
 
-  @media screen and (max-width: 900px) {
-    margin: 0 auto;
-    max-width: 400px;
+  .subtitle {
+    color: $white;
+    opacity: 0.6;
   }
 }
