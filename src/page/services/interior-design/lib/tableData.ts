@@ -1,4 +1,32 @@
-const tableData = {
+import { IconName } from '@/shared/svg'
+import React from 'react'
+import { IButtonProps } from '@/shared/ui/btns/btn'
+
+interface ITableData {
+  tableHeader: ITableHeaderItem[];
+  tableBody: Array<ITableBodyRowItem[]>;
+  tableFooter: ITableFooterItem[]
+}
+
+interface ITableHeaderItem {
+  title: string;
+  subtitle?: string;
+  style?: string
+}
+
+interface ITableBodyRowItem {
+  type: 'title' | 'text' | 'icon'
+  body?: string
+  iconName?: IconName
+}
+
+interface ITableFooterItem {
+  type: 'empty' | 'button' | 'text' | 'title'
+  props?: IButtonProps
+  body?: string
+}
+
+export const tableData: ITableData = {
   tableHeader: [
     { title: 'Items', style: 'small' },
     { title: 'BASIC', subtitle: '$20 per m2' },
@@ -8,51 +36,51 @@ const tableData = {
   tableBody: [
     [
       { type: 'title', body: 'Installation plan' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
     ],
     [
       { type: 'title', body: 'Planning solutions (2-3 options)' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
     ],
     [
       { type: 'title', body: 'Lighting plan' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
     ],
     [
       { type: 'title', body: 'Flooring plan' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
     ],
     [
       { type: 'title', body: 'Heating floor laying scheme' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
     ],
     [
       { type: 'title', body: 'Air conditioner zones layout' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
     ],
     [
       { type: 'title', body: '3D visualization of all rooms' },
       { type: 'text', body: 'Simplified' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
     ],
     [
       { type: 'title', body: 'Visualization of each room (3-4 angles)' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
-      { type: 'img', body: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'okMark' },
     ],
     [
       { type: 'title', body: 'Terms' },
@@ -62,11 +90,10 @@ const tableData = {
     ],
   ],
   tableFooter: [
-    [
-      { type: 'empty', body: '' },
-      { type: 'button', body: '10 days', action: 'onClick={() => console.log("work"))}' },
-      { type: 'text', body: '20 days', action: 'onClick={() => console.log("work"))}' },
-      { type: 'text', body: '30 days', action: 'onClick={() => console.log("work"))}' },
-    ],
-  ],
+    { type: 'empty', body: '' },
+    { type: 'button', props: { title: 'SEND REQUEST', size: 'small', onClick: () => console.log('work1') }},
+    { type: 'button', props: { title: 'SEND REQUEST', size: 'small', onClick: () => console.log('work2') }},
+    { type: 'button', props: { title: 'SEND REQUEST', size: 'small', onClick: () => console.log('work3') }},
+  ]
 }
+
