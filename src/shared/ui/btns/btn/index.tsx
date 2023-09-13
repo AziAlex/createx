@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 import cl from './style.module.scss'
 
-interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   title: string
   size: 'large' | 'regular' | 'small'
   solid?: boolean
@@ -10,7 +10,7 @@ interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   disabled?: boolean
 }
 
-const Button: FC<IProps> = ({ title, fill, solid, size, disabled, ...props }) => (
+const Button: FC<IButtonProps> = ({ title, fill, solid, size, disabled, ...props }) => (
   <button
     className={[
       cl.button,
