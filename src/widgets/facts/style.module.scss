@@ -1,0 +1,20 @@
+@import "@/var";
+@import "@/mixins";
+
+.wrap {
+  position: relative;
+
+  button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -28px;
+    padding: 0 responsive(20px, 112px) !important;
+  }
+}
+
+.darkTheme {
+  background-color: $gray-900;
+  padding-top: responsive(20px, 80px);
+  padding-bottom: responsive(40px, 126px);
+}
