@@ -19,107 +19,96 @@
     }
   }
 
-  .pricing {
+  h2 {
+    margin-bottom: responsive(12px, 24px);
+  }
 
-    .title {
-      margin-bottom: responsive(12px, 24px);
-    }
+  h2 + p {
+    text-align: center;
+    margin-bottom: responsive(30px, 60px);
+    font-size: responsive(12px, 18px);
+  }
 
-    .text {
-      text-align: center;
-      margin-bottom: responsive(30px, 60px);
-      font-size: responsive(12px, 18px);
-    }
+  p + div {
+    overflow-x: auto;
+    max-width: 1270px;
+    margin-bottom: responsive(60px, 120px);
+    box-shadow: $shadow-small;
+    border: 1px solid $gray-300;
+    border-radius: 4px;
 
-    .tableWrap {
-      overflow-x: auto;
-      max-width: 1270px;
-      margin-bottom: responsive(60px, 120px);
-      box-shadow: $shadow-small;
-      border: 1px solid $gray-300;
-      border-radius: 4px;
-    }
-
-    .table {
+    & > table {
       border-collapse: collapse;
       background: $white;
       width: 100%;
 
-
-      //@media screen and (max-width: 900px) {
-      //  grid-template-columns: 1fr 1fr;
-      //}
-      //
-      //@media screen and (max-width: 360px) {
-      //  grid-template-columns: 1fr;
-      //}
-      .tableColumns {
-      }
-
-      .tableColumn {
-        padding: 32px 24px 24px;
-        vertical-align: bottom;
-      }
-
-      .tableColumnsTitle {
-        color: $gray-900;
-        text-align: center;
-        font-size: responsive(16px,24px);
-        font-weight: 700;
-        line-height: 150%;
-        text-transform: uppercase;
-        margin-bottom: 2px;
-      }
-
-      .tableColumnsTitleSmall {
-        color: $gray-900;
+      th:first-child p {
         font-size: 18px;
-        font-weight: 700;
-        line-height: 150%;
         text-align: left;
+        text-transform: capitalize;
       }
 
-      .tableColumnsSubTitle {
-        color: $gray-700;
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%;
+      th {
+        padding-top: responsive(24px, 32px);
+        padding-bottom: responsive(16px, 24px);
+        @include paddingX(10px, 24px);
+        vertical-align: bottom;
+
+        p {
+          color: $gray-900;
+          text-align: center;
+          font-size: responsive(16px, 24px);
+          font-weight: 700;
+          line-height: 150%;
+          text-transform: uppercase;
+          margin-bottom: 2px;
+        }
+
+        p + p {
+          color: $gray-700;
+          text-align: center;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%;
+          text-transform: lowercase;
+        }
       }
 
-      .tableBody .tableRow:nth-child(odd) {
-        background-color: $gray-300;
+      & > tbody {
+        tr:nth-child(odd) {
+          background-color: $gray-300;
+        }
+
+        tr {
+          td {
+            text-align: center;
+            width: 20%;
+            color: $gray-800;
+            font-size: 16px;
+            line-height: 160%;
+          }
+
+          td:first-child {
+            @include paddingY(6px, 16px);
+            @include paddingX(8px, 24px);
+            width: 40%;
+            text-align: left;
+          }
+
+          .checkmark {
+            width: 24px;
+            height: 24px;
+            fill: $orange
+          }
+        }
+
+        tr:last-child td {
+          padding: 32px 0;
+          background-color: $white;
+        }
       }
-
-
-      .tableRowElementText {
-        @include paddingY(6px,16px);
-        @include paddingX(8px,24px);
-        color: $gray-800;
-        font-size: 16px;
-        line-height: 160%;
-        width: 40%;
-      }
-
-      .tableRowElement {
-        text-align: center;
-        width: 20%;
-        color: $gray-800;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 160%;
-      }
-
-      .tableRowElementButton, .tableRowElementTextButton {
-        padding: 32px 0;
-        background-color: $white;
-      }
-
-      .tableButton {
-        margin: 0 auto;
-      }
-
     }
   }
 }
+

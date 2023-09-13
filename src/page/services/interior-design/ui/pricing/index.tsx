@@ -1,74 +1,67 @@
 'use client'
-
-import React from 'react'
-import styles from '@/page/services/interior-design/ui/pricing/style.module.scss'
+import React, { FC } from 'react'
 import Image from 'next/image'
 import Wrap from '@/shared/ui/wrap'
 import Button from '@/shared/ui/btns/btn'
-import Icon, { IconName } from '@/shared/svg'
-import clsx from 'clsx'
 import PartnersSlider from '@/feature/sliders/partners-slider'
+import cl from '@/page/services/interior-design/ui/pricing/style.module.scss'
+import Icon, { IconName } from '@/shared/svg'
 import { tableData } from '@/page/services/interior-design/lib/tableData'
 
-const PricingTable = () => {
+const PricingTable: FC = () => {
   return (
-    <div className={styles.wrap}>
+    <div className={cl.wrap}>
       <Image src={'/pages/services/interior-design/table-section-bg.png'} alt='bg' width={560} height={670} />
       <Wrap>
-        <div className={styles.pricing}>
-          <h2 className={styles.title}>Pricing</h2>
-          <p className={styles.text}>
-            We offer you three categories of construction.
-          </p>
-          <div className={styles.tableWrap}>
-            <table className={styles.table}>
-              <thead className={styles.tableHead}>
-              <tr className={styles.tableColumns}>
-                {tableData.tableHeader.map((item, index) => (
-                  <th key={index} className={styles.tableColumn}>
-                    <p className={item.style === 'small' ? styles.tableColumnsTitleSmall : styles.tableColumnsTitle}>
-                      {item.title}
-                    </p>
-                    {item.subtitle && (
-                      <p className={styles.tableColumnsSubTitle}>{item.subtitle}</p>
-                    )}
-                  </th>
-                ))}
-              </tr>
-              </thead>
-              <tbody className={styles.tableBody}>
-              {tableData.tableBody.map((item, index) => (
-                <tr key={index} className={styles.tableRow}>
-                  {item.map((item, index) => (
-                    <td key={index}
-                        className={item.type === 'title' ? styles.tableRowElementText : styles.tableRowElement}>
-                      {item.body && item.body}
-                      {item.type === 'icon' && (
-                        <Icon name={item.iconName as IconName} className={styles.okImage} />
-                      )}
-                    </td>
-                  ))}
-                </tr>
+        <h2>Pricing</h2>
+        <p>We offer you three categories of construction.</p>
+        <div>
+          <table>
+
+            <thead>
+            <tr>
+              {tableData.tableHeader.map((item, index) => (
+                <th key={index}>
+                  <p>{item.title}</p>
+                  {item.subtitle && (
+                    <p>{item.subtitle}</p>
+                  )}
+                </th>
               ))}
-              <tr className={styles.tableRow}>
-                {tableData.tableFooter.map((item, index) => (
-                  <td key={index}
-                      className={item.type === 'empty' ? styles.tableRowElementText : clsx(styles.tableRowElement, styles.tableRowElementButton)}>
+            </tr>
+            </thead>
+
+            <tbody>
+            {tableData.tableBody.map((item, index) => (
+              <tr key={index}>
+                {item.map((item, index) => (
+                  <td key={index}>
                     {item.body && item.body}
-                    {item.type === 'button' && item.props && (
-                      <Button {...item.props} />
+                    {item.type === 'icon' && (
+                      <Icon name={item.iconName as IconName} className={cl.checkmark} />
                     )}
                   </td>
                 ))}
               </tr>
-              </tbody>
-            </table>
-          </div>
-          <PartnersSlider
-            rows={1}
-            title='Supported by 12+ partners'
-          />
+            ))}
+
+            <tr>
+              {tableData.tableFooter.map((item, index) => (
+                <td key={index}>
+                  {item.body && item.body}
+                  {item.type === 'button' && item.props && (
+                    <Button {...item.props} />
+                  )}
+                </td>
+              ))}
+            </tr>
+            </tbody>
+          </table>
         </div>
+        <PartnersSlider
+          rows={1}
+          title='Supported by 12+ partners'
+        />
       </Wrap>
     </div>
   )

@@ -1,5 +1,4 @@
 import { IconName } from '@/shared/svg'
-import React from 'react'
 import { IButtonProps } from '@/shared/ui/btns/btn'
 
 interface ITableData {
@@ -36,51 +35,51 @@ export const tableData: ITableData = {
   tableBody: [
     [
       { type: 'title', body: 'Installation plan' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
     ],
     [
       { type: 'title', body: 'Planning solutions (2-3 options)' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
     ],
     [
       { type: 'title', body: 'Lighting plan' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
     ],
     [
       { type: 'title', body: 'Flooring plan' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
     ],
     [
       { type: 'title', body: 'Heating floor laying scheme' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
     ],
     [
       { type: 'title', body: 'Air conditioner zones layout' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
     ],
     [
       { type: 'title', body: '3D visualization of all rooms' },
-      { type: 'text', body: 'Simplified' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
+      { type: 'text', body: 'simplified' },
+      { type: 'icon', iconName: 'checkMark' },
+      { type: 'icon', iconName: 'checkMark' },
     ],
     [
       { type: 'title', body: 'Visualization of each room (3-4 angles)' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
-      { type: 'icon', iconName: 'okMark' },
+      { type: 'text', body: '' },
+      { type: 'text', body: '' },
+      { type: 'icon', iconName: 'checkMark' },
     ],
     [
       { type: 'title', body: 'Terms' },
