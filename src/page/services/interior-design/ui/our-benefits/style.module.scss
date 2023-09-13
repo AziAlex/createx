@@ -1,0 +1,5 @@
+@import "../../../../../app/style/mixins";
+
+.wrap {
+  margin-bottom: responsive(40px, 180px);
+}

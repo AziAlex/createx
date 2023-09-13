@@ -1,18 +1,20 @@
 import Facts from '@/widgets/facts'
 import TitleBlock from '@/shared/ui/title-block'
+
 import { cards } from './lib/constants'
 
-import styles from "./style.module.scss"
+import styles from './style.module.scss'
 
-const OurValues = () => (
+const OurBenefits = () => (
   <div className={styles.wrap}>
-    <Facts cards={cards}>
+    <Facts cards={cards} buttonText='Discuss a project' darkTheme>
       <TitleBlock
-        title='Our core values'
+        title='Our benefits'
         subtitle='Our mission is to set the highest standards for construction sphere.'
+        darkTheme
       />
     </Facts>
   </div>
 )
 
-export default OurValues
+export default OurBenefits

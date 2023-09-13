@@ -16,8 +16,8 @@
   white-space: nowrap;
 
   &.large {
-    @include paddingY(8px, 15px);
     @include paddingX(16px, 40px);
+    line-height: 52px;
     font-size: 16px;
 
     @media (max-width: 350px) {
