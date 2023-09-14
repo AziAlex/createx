@@ -20,12 +20,8 @@
   }
 
   .sliderContent {
-    padding-top: 220px;
+    padding-top: responsive(40px, 220px);
     max-width: 595px;
-
-    @media (max-width: 1250px) {
-      padding: 0 20px;
-    }
 
     @media (max-width: 610px) {
       left: 0;

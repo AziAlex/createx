@@ -8,14 +8,14 @@
 
   & > ul {
     width: 100%;
-    max-width: 600px;
+    max-width: responsive(360px, 724px);
     position: absolute;
     z-index: 10;
     left: calc(50% - 620px);
-    bottom: 12%;
+    bottom: 80px;
     display: grid !important;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 4px;
 
 
     @media (max-width: 1250px) {
@@ -39,15 +39,24 @@
         width: 100%;
         display: block;
         color: rgba(248, 248, 248, 0.49);
-        font-size: 22px;
+        font-size: 28px;
         font-weight: 700;
         padding-bottom: 20px;
         transition: 0.3s ease-in-out;
+        position: relative;
+
+        span {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+        }
 
         &::before,
         &::after {
           position: absolute;
-          bottom: -20px;
+          bottom: 2px;
           left: 0;
           width: 100%;
           background-color: rgba(248, 248, 248, 0.49);
@@ -57,16 +66,15 @@
         }
       }
 
-      &.slick-active {
-        a {
-          opacity: 1;
-          color: #fff;
+    }
 
-          &::before {
-            animation: animateDots 0.3s ease-in-out;
-            background-color: #fff;
-          }
-        }
+    .active {
+      opacity: 1;
+      color: #fff;
+
+      &::before {
+        animation: animateDots 0.3s ease-in-out;
+        background-color: #fff;
       }
     }
   }
