@@ -21,6 +21,7 @@ export * from './ui/arrows/IconArrowTop'
 export * from './ui/arrows-other/IconArrowConvert'
 
 export * from './ui/basic/IconBurgerMenu'
+export * from './ui/basic/IconCheckMark'
 
 export * from './ui/chevrons/IconChevronsDown'
 export * from './ui/chevrons/IconChevronsTop'
