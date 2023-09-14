@@ -1,11 +1,12 @@
+import { FC } from 'react'
+
 import ShowCaseSlider from '@/feature/sliders/showcase-slider'
 import FooterBlock from '@/shared/ui/footer-block'
 import Button from '@/shared/ui/btns/btn'
 import Wrap from '@/shared/ui/wrap'
+import { TCard } from '@/shared/types/projects'
 
 import styles from './style.module.scss'
-import { FC } from 'react'
-import { TCard } from '@/shared/types/projects'
 
 interface IProps {
   title: string

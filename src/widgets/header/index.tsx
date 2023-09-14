@@ -1,16 +1,17 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
+import Link from 'next/link'
+
 import { links } from '@/widgets/header/lib/constants'
 import Wrap from '@/shared/ui/wrap'
 import Menu from './ui/menu'
 import Icon from '@/shared/svg'
 
 import styles from './style.module.scss'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 const Header = () => {
-  const patchName = usePathname()
+  const pathName = usePathname()
 
   return (
     <Wrap>
@@ -28,7 +29,7 @@ const Header = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className={patchName === link.href ? styles.active : ''}
+                    className={pathName === link.href ? styles.active : ''}
                   >{link.name}</a>
                 </li>
               ))}

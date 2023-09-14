@@ -1,11 +1,12 @@
 import React from 'react'
-
-import styles from './style.module.scss'
-import { servicesData } from '@/page/services-page/main/lib/constants'
 import Image from 'next/image'
+import Link from 'next/link'
+
+import { servicesData } from '@/page/services-page/ui/main/lib/constants'
 import Button from '@/shared/ui/btns/btn'
 import Wrap from '@/shared/ui/wrap'
-import Link from 'next/link'
+
+import styles from './style.module.scss'
 
 const MainServices = () => (
   <div className={styles.main}>

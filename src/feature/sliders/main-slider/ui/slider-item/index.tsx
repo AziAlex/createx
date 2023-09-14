@@ -1,8 +1,6 @@
 import React from 'react'
-
 import Image from 'next/image'
 
-import img from '/public/main-page/slider-bg-image.jpg'
 import Button from '@/shared/ui/btns/btn'
 import Wrap from '@/shared/ui/wrap'
 
@@ -22,7 +20,7 @@ const MainSliderItem = () => {
           </div>
         </div>
       </Wrap>
-      <Image src={img} alt='slider' fill />
+      <Image src="/main-page/slider-bg-image.jpg" alt='slider' fill />
     </div>
   )
 }

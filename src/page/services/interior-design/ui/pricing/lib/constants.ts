@@ -1,29 +1,4 @@
-import { IconName } from '@/shared/svg'
-import { IButtonProps } from '@/shared/ui/btns/btn'
-
-interface ITableData {
-  tableHeader: ITableHeaderItem[];
-  tableBody: Array<ITableBodyRowItem[]>;
-  tableFooter: ITableFooterItem[]
-}
-
-interface ITableHeaderItem {
-  title: string;
-  subtitle?: string;
-  style?: string
-}
-
-interface ITableBodyRowItem {
-  type: 'title' | 'text' | 'icon'
-  body?: string
-  iconName?: IconName
-}
-
-interface ITableFooterItem {
-  type: 'empty' | 'button' | 'text' | 'title'
-  props?: IButtonProps
-  body?: string
-}
+import { ITableData } from '@/page/services/interior-design/ui/pricing/lib/types'
 
 export const tableData: ITableData = {
   tableHeader: [

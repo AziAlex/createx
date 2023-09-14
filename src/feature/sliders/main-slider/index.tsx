@@ -1,13 +1,14 @@
 'use client'
 
+import { useState } from 'react'
 import Slider from 'react-slick'
+
 import SliderItem from '@/feature/sliders/main-slider/ui/slider-item'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import styles from './style.module.scss'
-import { useState } from 'react'
 
 const MainSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0)

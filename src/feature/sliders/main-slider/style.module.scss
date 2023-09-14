@@ -70,11 +70,11 @@
 
     .active {
       opacity: 1;
-      color: #fff;
+      color: $white;
 
       &::before {
         animation: animateDots 0.3s ease-in-out;
-        background-color: #fff;
+        background-color: $white;
       }
     }
   }
@@ -87,6 +87,6 @@
   }
   to {
     width: 100%;
-    background-color: #fff;
+    background-color: $white;
   }
 }

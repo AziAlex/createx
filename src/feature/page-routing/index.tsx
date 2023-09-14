@@ -6,16 +6,16 @@ import Link from 'next/link'
 import styles from './style.module.scss'
 
 const PageRouter = () => {
-  const patchName = usePathname()
+  const pathName = usePathname()
 
-  const patchList = ['homepage', ...patchName.split('/').filter(item => item !== '')]
+  const patchList = ['homepage', ...pathName.split('/').filter(item => item !== '')]
 
   return (
     <ul className={styles.routList}>
       {patchList.map((item, idx) => (
         <li key={idx}>
           <Link href={item === 'homepage' ? '/' : `/${item}`}>
-            {idx === 0 ? '' : <span>/ </span>}{item}
+            {idx === 0 ? null : <span>/ </span>}{item}
           </Link>
         </li>
       ))}

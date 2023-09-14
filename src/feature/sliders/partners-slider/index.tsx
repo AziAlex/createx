@@ -5,7 +5,7 @@ import Slider from 'react-slick'
 import Image from 'next/image'
 
 import Wrap from '@/shared/ui/wrap'
-import { img1, img2, img10, img4, img3, img5, img6, img7, img8, img9, img11, img12 } from './lib/exports'
+import { partnesrsItems } from './lib/exports'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -22,7 +22,7 @@ const PartnersSlider: FC<IProps> = ({ rows, paragraph, title }) => {
     <Wrap>
       <h2 className={styles.h2}>{title}</h2>
       {paragraph && <p className={styles.p}>{paragraph}</p>}
-      <div className="sliderWrap">
+      <div className='sliderWrap'>
         <Slider
           className={styles.slider}
           arrows={false}
@@ -52,18 +52,16 @@ const PartnersSlider: FC<IProps> = ({ rows, paragraph, title }) => {
             },
           ]}
         >
-          <Image className={styles.slide} src={img1} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img2} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img3} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img4} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img5} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img6} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img7} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img8} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img9} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img10} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img11} alt='img' width={120} height={64} />
-          <Image className={styles.slide} src={img12} alt='img' width={120} height={64} />
+          {partnesrsItems.map((item, idx) => (
+            <Image
+              key={idx}
+              src={item}
+              alt='img'
+              width={120}
+              height={64}
+              className={styles.slide}
+            />
+          ))}
         </Slider>
       </div>
     </Wrap>
