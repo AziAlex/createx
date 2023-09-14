@@ -1,7 +1,7 @@
 import { FC } from 'react'
+import clsx from 'clsx'
 
 import styles from './style.module.scss'
-import clsx from 'clsx'
 
 type TProps = {
   title: string

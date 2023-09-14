@@ -1,10 +1,12 @@
 import React, { FC } from 'react'
+import clsx from 'clsx'
 
-import styles from './style.module.scss'
 import FactCards from '@/widgets/facts/ui/fact-cards'
 import { TCard } from '@/entities/fact-card/lib/type'
 import Button from '@/shared/ui/btns/btn'
 import Wrap from '@/shared/ui/wrap'
+
+import styles from './style.module.scss'
 
 interface IProps {
   children: React.ReactNode
@@ -14,7 +16,7 @@ interface IProps {
 }
 
 const Facts: FC<IProps> = ({ children, buttonText, darkTheme, cards }) => (
-  <div className={[styles.wrap, darkTheme ? styles.darkTheme : ''].join(' ')}>
+  <div className={clsx(styles.wrap, { [styles.darkTheme]: darkTheme })}>
     <Wrap>
       {children}
       <FactCards cards={cards} darkTheme={darkTheme} />

@@ -10,16 +10,6 @@ interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   disabled?: boolean
 }
 
-/**
- * Renders a button component with the given props.
- *
- * @param title (string) - The title of the button.
- * @param fill (boolean) - Whether the button should be filled.
- * @param solid (boolean) - Whether the button should be solid.
- * @param size (large | regular | small) - The size of the button.
- * @param disabled (boolean) - Whether the button should be disabled.
- */
-
 const Button: FC<IProps> = ({
   title,
   fill,
