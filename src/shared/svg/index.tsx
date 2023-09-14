@@ -30,6 +30,7 @@ import {
   IconCamera,
   IconContract,
   IconHelmet,
+  IconCheckMark,
 } from '@/shared/svg/Icon'
 
 export type IconName =
@@ -62,6 +63,7 @@ export type IconName =
   | 'twitter'
   | 'whatsapp'
   | 'youtube'
+  | 'checkMark'
 
 interface IProps {
   name: IconName
@@ -99,6 +101,7 @@ const Icon: FC<IProps> = ({ name, className }) => {
     twitter: <IconTwitter className={className} />,
     whatsapp: <IconWhatsapp className={className} />,
     youtube: <IconYouTube className={className} />,
+    checkMark: <IconCheckMark className={className} />,
   }
 
   return <>{icons[name]}</>
