@@ -1,0 +1,5 @@
+@import '@/mixins';
+
+.wrap {
+  margin-bottom: responsive(15px, 30px);
+}

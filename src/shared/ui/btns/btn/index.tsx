@@ -1,23 +1,20 @@
 import React, { FC } from 'react'
 
-import cl from './style.module.scss'
+import { IButtonProps } from '@/shared/types/ui'
 
-interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  title: string
-  size: 'large' | 'regular' | 'small'
-  solid?: boolean
-  fill?: boolean
-}
+import styles from './style.module.scss'
 
-const Button: FC<IProps> = ({ title, fill, solid, size, ...props }) => (
+const Button: FC<IButtonProps> = ({ title, fill, solid, size, disabled, ...props }) => (
   <button
     className={[
-      cl.button,
-      solid ? cl.solid : null,
-      fill ? cl.fill : null,
-      cl[size],
+      styles.button,
+      solid ? styles.solid : null,
+      fill ? styles.fill : null,
+      styles[size],
+      disabled ? styles.disabled : null,
     ].join(' ')}
     {...props}
+    disabled={disabled}
   >
     {title}
   </button>

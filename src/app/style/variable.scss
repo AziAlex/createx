@@ -1,15 +1,38 @@
 // Colors
 $gray-200: #f4f5f6;
+$gray-300: #E5E8ED;
 $gray-400: #D7DADD;
+$gray-600: #9A9CA5;
 $gray-700: #787a80;
 $gray-800: #424551;
-$gray-900: #1e212c;
-$orange: #ff5a30;
+$gray-900: #1E212C;
+$orange-600: #F89828;
+$orange: #FF5A30;
 $red: #f30;
-$whitle: #fff;
+$pink: #F52F6E;
+$blue-400: #5A87FC;
+$blue-green: #03CEA4;
+$white: #fff;
+$black: #000;
 
 $btn: $orange;
 $btn-hover: $red;
 
 $input-bg: $gray-200;
 $input-border: $gray-400;
+
+
+$shadow-small: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+
+$shadow-regular: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),
+0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+0px 30px 24px -10px rgba(154, 156, 165, 0.10),
+0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+
+$shadow-large: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),
+0px 12px 10px -6px rgba(30, 33, 44, 0.08),
+0px 26px 24px -10px rgba(30, 33, 44, 0.10),
+0px 60px 80px -20px rgba(30, 33, 44, 0.16);

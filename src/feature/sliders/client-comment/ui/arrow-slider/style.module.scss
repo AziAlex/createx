@@ -1,0 +1,30 @@
+@import "@/var";
+
+.arrow {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  border: none;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+
+  &:hover {
+    background-color: $btn;
+
+    .left,
+    .right {
+      fill: $white;
+    }
+  }
+
+  .left,
+  .right {
+    fill: $gray-800;
+    width: 24px;
+    height: 24px;
+  }
+}

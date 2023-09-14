@@ -1,0 +1,19 @@
+@import "@/var";
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+
+  button {
+    &:first-child {
+      bottom: -14px;
+      right: 36px;
+    }
+
+    &:last-child {
+      bottom: -14px;
+      right: -12px;
+    }
+  }
+}

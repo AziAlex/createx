@@ -5,9 +5,19 @@ $desktop: 1230px;
   $slope: ($max-size - $min-size) / ($desktop - $mobile);
   $y-axis-intersection: -1 * $mobile * $slope + $min-size;
   $clamp-value: clamp(
-    #{$min-size},
-    #{$y-axis-intersection} + #{$slope} * 100vw,
-    #{$max-size}
+          #{$min-size},
+          #{$y-axis-intersection} + #{$slope} * 100vw,
+          #{$max-size}
   );
   @return $clamp-value;
+}
+
+@mixin paddingX($min, $max) {
+  padding-left: responsive($min, $max);
+  padding-right: responsive($min, $max);
+}
+
+@mixin paddingY($min, $max) {
+  padding-top: responsive($min, $max);
+  padding-bottom: responsive($min, $max);
 }

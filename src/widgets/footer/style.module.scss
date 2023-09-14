@@ -1,0 +1,23 @@
+@import "@/var";
+@import "@/mixins";
+
+.footer {
+  background-color: $gray-900;
+  @include paddingY(30px, 80px);
+
+  @media (max-width: 900px) {
+    .footerWrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr auto;
+      gap: responsive(20px, 40px);
+
+      @media (max-width: 700px) {
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+      @media (max-width: 535px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "@/var";
+@import "@/mixins";
+
+.routList {
+  margin-top: responsive(20px, 58px);
+  margin-bottom: responsive(16px, 42px);
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+
+  span {
+    color: $gray-600;
+    padding-right: 4px;
+  }
+
+  li {
+    a {
+      text-transform: capitalize;
+    }
+  }
+
+  li:hover {
+    color: $gray-600;
+  }
+
+  & > li:last-child {
+    color: $gray-600;
+  }
+}

@@ -1,0 +1,12 @@
+@import "@/mixins";
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: responsive(16px, 40px);
+
+  @media (max-width: 380px) {
+    flex-wrap: wrap;
+  }
+}

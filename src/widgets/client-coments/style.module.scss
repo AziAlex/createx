@@ -1,0 +1,40 @@
+@import "@/mixins";
+
+.wrap {
+  margin-top: responsive(40px, 198px);
+  width: 100%;
+  display: flex;
+  gap: responsive(-100px, 135px);
+
+  @media (max-width: 1050px) {
+    gap: 10px;
+  }
+
+  .post {
+    max-width: 600px;
+
+    @media (max-width: 950px) {
+      width: 100%;
+      max-width: 950px;
+    }
+
+    h2 {
+      text-align: left;
+      margin-bottom: responsive(24px, 60px);
+    }
+  }
+
+  .img {
+    position: relative;
+    width: 100%;
+    max-width: 495px;
+
+    @media (max-width: 950px) {
+      display: none;
+    }
+
+    img {
+      height: auto !important;
+    }
+  }
+}

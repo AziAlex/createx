@@ -1,0 +1,27 @@
+@import "@/mixins";
+
+.recentNews {
+  & > h2 {
+    margin-bottom: responsive(24px, 60px);
+  }
+
+  padding-bottom: responsive(40px, 120px);
+
+  .newsBlock {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr auto;
+    gap: responsive(10px, 30px);
+    margin-bottom: responsive(30px, 80px);
+
+    & > div:first-child {
+      grid-row: 1 / span 2;
+    }
+
+    @media (max-width: 1230px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

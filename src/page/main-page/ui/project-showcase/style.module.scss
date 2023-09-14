@@ -1,0 +1,5 @@
+@import '@/mixins';
+
+.wrap {
+  @include paddingY(30px, 120px);
+}

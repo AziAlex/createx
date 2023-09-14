@@ -1,0 +1,71 @@
+@import "@/var";
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 900px) {
+    grid-column: span 2;
+  }
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  p {
+    font-size: 12px;
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+
+    @media (max-width: 500px) {
+      display: block;
+      text-align: center;
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .goTop {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+
+    @media (max-width: 500px) {
+      align-items: center;
+    }
+
+    span {
+      color: $white;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    button {
+      background-color: $btn;
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: 0.25s ease-in-out;
+
+      &:hover {
+        background-color: $btn-hover;
+      }
+
+      .icon {
+        fill: $white;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

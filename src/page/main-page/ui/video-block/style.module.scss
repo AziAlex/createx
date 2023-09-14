@@ -4,15 +4,10 @@
 .videoBlock {
   width: 100%;
   text-align: center;
-  margin-bottom: responsive(60px, 180px);
+  margin-bottom: responsive(60px, 178px);
 
   @media (max-width: 1230px) {
     padding: 0 20px;
-  }
-
-  p {
-    margin-top: 24px;
-    margin-bottom: responsive(30px, 60px);
   }
 
   .img {

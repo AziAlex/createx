@@ -1,0 +1,30 @@
+@import "@/var";
+@import "@/mixins";
+
+.form {
+  display: flex;
+  height: 44px;
+  margin-bottom: responsive(8px, 16px);
+
+  @media (max-width: 600px) {
+    height: 36px;
+  }
+
+  input {
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px 0 0 4px;
+    font-size: 18px;
+    color: $white;
+
+    @media (max-width: 600px) {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+
+  button {
+    border-radius: 0 4px 4px 0;
+    height: 100%;
+  }
+}

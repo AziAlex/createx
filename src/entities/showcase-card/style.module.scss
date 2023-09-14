@@ -1,0 +1,77 @@
+@import '@/var';
+@import '@/mixins';
+
+.card {
+  max-width: 390px;
+  padding: 0 2px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 440px;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 1230px) {
+    padding: 0 5px;
+  }
+
+  @media (max-width: 600px) {
+    max-height: 300px;
+  }
+
+  img {
+    object-fit: cover;
+
+    @media (max-width: 1230px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      max-height: 300px;
+    }
+  }
+
+  .content {
+    width: 100%;
+    padding-top: 14px;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: -78px;
+    background: $white;
+    transition: 0.3s ease-in-out;
+
+    @media (max-width: 1230px) {
+      max-width: calc(100% - 10px);
+    }
+
+    .title {
+      margin-bottom: 6px;
+    }
+
+    .description {
+      margin-bottom: 24px;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+  .btn {
+    text-align: center;
+  }
+
+  &:hover {
+    .content {
+      bottom: -2px;
+
+      .title {
+        margin-bottom: 0;
+      }
+
+
+      @media (max-width: 600px) {
+        bottom: -30px;
+      }
+    }
+  }
+
+}
