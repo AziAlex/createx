@@ -1,13 +1,19 @@
 'use client'
 
+import { FC } from 'react'
 import Slider from 'react-slick'
+
 import { ArrowSlider } from '@/feature/sliders/client-comment/ui/arrow-slider'
-import { cards } from '@/page/main-page/ui/project-showcase/lib/constants'
 import Card from '@/entities/showcase-card'
 
 import styles from './style.module.scss'
+import { TCard } from '@/shared/types/projects'
 
-const ShowCaseSlider = () => (
+interface IProps {
+  cards: TCard[]
+}
+
+const ShowCaseSlider: FC<IProps> = ({ cards }) => (
   <Slider
     className={styles.slider}
     slidesToScroll={1}
