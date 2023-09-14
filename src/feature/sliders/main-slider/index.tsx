@@ -5,13 +5,15 @@ import SliderItem from '@/feature/sliders/main-slider/ui/slider-item'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import './style.scss'
+// import './style.module.scss'
+import styles from './style.module.scss'
 
 const MainSlider = () => {
   const items = [0, 1, 2, 3]
 
   return (
     <Slider
+      className={styles.slider}
       customPaging={(index) => (
         <a>
           0{index + 1}

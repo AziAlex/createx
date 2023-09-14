@@ -1,6 +1,7 @@
 @import "@/mixins";
 
 .wrap {
+  margin-top: responsive(40px, 198px);
   width: 100%;
   display: flex;
   gap: responsive(-100px, 135px);

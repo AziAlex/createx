@@ -1,13 +1,12 @@
 @import "@/var";
 @import "@/mixins";
 
-.slick-slider {
+.slider {
   margin-top: -6px;
   position: relative;
   margin-bottom: responsive(50px, 120px);
 
-
-  .slick-dots {
+  & > ul {
     width: 100%;
     max-width: 600px;
     position: absolute;

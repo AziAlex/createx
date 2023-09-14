@@ -14,7 +14,7 @@ const PageRouter = () => {
     <ul className={styles.routList}>
       {patchList.map((item, idx) => (
         <li key={idx}>
-          <Link href={item === 'Homepage' ? '/' : `/${item}`}>
+          <Link href={item === 'homepage' ? '/' : `/${item}`}>
             {idx === 0 ? '' : <span>/ </span>}{item}
           </Link>
         </li>

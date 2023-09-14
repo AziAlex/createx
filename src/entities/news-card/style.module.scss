@@ -43,6 +43,7 @@
 
     h4 {
       text-align: left;
+      margin-bottom: 12px;
     }
 
     .subInfo {
@@ -54,6 +55,7 @@
 
 
       span {
+        font-size: 14px;
         color: $gray-700;
         display: flex;
         align-items: center;
@@ -121,6 +123,16 @@
   }
 
   .info {
-    padding: responsive(4px, 16px);
+    @include paddingX(8px, 24px);
+    padding-top: responsive(4px, 16px);
+    padding-bottom: responsive(8px, 24px);
+
+    .subInfo {
+      margin-bottom: 0;
+
+      @media (max-width: 1230px) {
+        margin-bottom: responsive(8px, 16px);
+      }
+    }
   }
 }
