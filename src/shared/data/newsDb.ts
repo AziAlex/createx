@@ -3,11 +3,11 @@ import { INewsCard } from '@/shared/types/news'
 export const newsData: INewsCard[] = [
   {
     id: 1,
-    img: "/news/Building Construction Hand Tools.jpg",
-    title: 'Building Construction Hand Tools',
+    img: '/news/How to Build Climate Change-Resilient Infrastructure.jpg',
+    title: 'How to Build Climate Change-Resilient Infrastructure',
     description: 'Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...',
-    comments: 0,
-    type: 'Innovation',
+    comments: 4,
+    type: 'Industry News',
     date: '2022-07-24',
   }, {
     id: 2,
@@ -16,6 +16,14 @@ export const newsData: INewsCard[] = [
     description: 'Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...',
     comments: 0,
     type: 'Expert Tips',
+    date: '2022-07-24',
+  }, {
+    id: 6,
+    img: '/news/Types of Flooring Materials.jpg',
+    title: 'Types of Flooring Materials',
+    description: 'Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...',
+    comments: 0,
+    type: 'Company News',
     date: '2022-07-24',
   }, {
     id: 3,
@@ -40,14 +48,6 @@ export const newsData: INewsCard[] = [
     description: 'Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...',
     comments: 0,
     type: 'Industry News',
-    date: '2022-07-24',
-  }, {
-    id: 6,
-    img: '/news/Types of Flooring Materials',
-    title: 'Types of Flooring Materials',
-    description: 'Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...',
-    comments: 0,
-    type: 'Company News',
     date: '2022-07-24',
   },
 ]

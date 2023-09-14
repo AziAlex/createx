@@ -2,11 +2,11 @@
 @import "@/mixins";
 
 .routList {
-  margin-top: responsive(20px, 65px);
-  margin-bottom: responsive(16px, 40px);
+  margin-top: responsive(20px, 58px);
+  margin-bottom: responsive(16px, 42px);
   font-size: 14px;
   display: flex;
-  gap: 4px;
+  gap: 8px;
 
   span {
     color: $gray-600;

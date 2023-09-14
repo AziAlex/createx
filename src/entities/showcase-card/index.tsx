@@ -1,16 +1,16 @@
 import React, { FC } from 'react'
-import { TCard } from '../../page/main-page/ui/project-showcase/lib/constants'
 
 import Image from 'next/image'
 import Button from '@/shared/ui/btns/btn'
+import { TCard } from '@/shared/types/projects'
 
 import styles from './style.module.scss'
 
-type TProsp = {
+type TProps = {
   card: TCard
 }
 
-const Card: FC<TProsp> = ({ card }) => (
+const Card: FC<TProps> = ({ card }) => (
   <div className={styles.card}>
     <Image src={card.img} alt={card.alt} width={390} height={345} />
 

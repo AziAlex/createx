@@ -1,3 +1,54 @@
-.main {
+@import "@/mixins";
 
+.main {
+  padding-top: responsive(30px, 120px);
+  padding-bottom: responsive(40px, 180px);
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: responsive(30px, 120px);
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+
+      img {
+        object-fit: cover;
+        height: auto;
+
+        @media (max-width: 960px) {
+          min-height: 100%;
+        }
+        @media (max-width: 600px) {
+          display: none;
+        }
+      }
+
+      .content {
+        max-width: 575px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          text-align: left;
+          margin-bottom: responsive(12px, 24px);
+          font-size: responsive(18px, 32px);
+          line-height: 150%;
+        }
+
+        p {
+          margin-bottom: responsive(20px, 48px);
+          line-height: 160%
+        }
+      }
+    }
+  }
 }

@@ -8,7 +8,8 @@
 
   .our_services {
     .cards {
-      margin-bottom: responsive(40px, 85px);
+      margin-top: -2px;
+      margin-bottom: responsive(40px, 80px);
       display: grid;
       grid-template-columns: repeat(4, 1fr);
 

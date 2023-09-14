@@ -4,7 +4,7 @@
 
 .sliderItem {
   height: calc(100vh - 92px);
-  max-height: 1080px;
+  max-height: 988px;
   position: relative;
 
   @media (max-width: 1100px) {
@@ -20,11 +20,8 @@
   }
 
   .sliderContent {
+    padding-top: responsive(40px, 220px);
     max-width: 595px;
-
-    @media (max-width: 1250px) {
-      padding: 0 20px;
-    }
 
     @media (max-width: 610px) {
       left: 0;
@@ -37,7 +34,7 @@
       font-weight: 700;
       letter-spacing: 1px;
       line-height: 130%;
-      color: #fff;
+      color: $white;
 
       @media (max-width: 610px) {
         text-align: center;
@@ -54,7 +51,7 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 150%;
-      color: #fff;
+      color: $white;
 
       @media (max-width: 610px) {
         text-align: center;
@@ -72,8 +69,8 @@
       }
 
       button:first-child {
-        border: 1px solid #fff;
-        color: #fff;
+        border: 1px solid $white;
+        color: $white;
 
         &:hover {
           background-color: $btn;

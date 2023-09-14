@@ -28,7 +28,8 @@
   }
 
   &.regular {
-    @include paddingX(12px, 32px);
+    @include paddingX(12px, 30px);
+    line-height: 44px;
     font-size: 14px;
   }
 

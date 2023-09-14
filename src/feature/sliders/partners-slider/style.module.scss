@@ -1,14 +1,11 @@
 @import "@/var";
 @import "@/mixins";
 
-.h2 {
-  margin-bottom: responsive(16px, 24px);
-}
-
 .p {
   color: $gray-700;
   text-align: center;
   font-size: responsive(16px, 18px);
+  margin-top: responsive(16px, 24px);
 }
 
 .slider {

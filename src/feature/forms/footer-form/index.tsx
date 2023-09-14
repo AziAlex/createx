@@ -53,7 +53,7 @@ const FormFooter = () => {
       </div>
       <Button
         title='send request'
-        size='large'
+        size='regular'
         disabled={formDisable}
         solid
         onClick={(e) => handleFormSubmit(e, form)}

@@ -4,7 +4,7 @@
 .main {
   display: flex;
   gap: responsive(0px, 125px);
-  margin-bottom: 46px;
+  margin-bottom: 38px;
 
 
   @media (max-width: 900px) {
@@ -20,13 +20,16 @@
     list-style: none;
     font-size: 16px;
     color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 
     & > li {
       line-height: 160%;
 
       &:first-child {
         font-weight: 700;
-        margin-bottom: 13px;
+        margin-bottom: 10px;
         line-height: 150%;
         letter-spacing: 1px;
 

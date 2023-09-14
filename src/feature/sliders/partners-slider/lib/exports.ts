@@ -1,12 +1,14 @@
-export { default as img1 } from '/public/partners/Atlantis Health Logo.png'
-export { default as img2 } from '/public/partners/Complete Health Logo - Untitled Page.png'
-export { default as img3 } from '/public/partners/Del Mar Strategy Logo.png'
-export { default as img4 } from '/public/partners/For Sale Logo.png'
-export { default as img5 } from '/public/partners/Happy Home Logo.png'
-export { default as img6 } from '/public/partners/Higher Fit Logo - Untitled Page.png'
-export { default as img7 } from '/public/partners/InDepth Consulting Logo - Untitled Page.png'
-export { default as img8 } from '/public/partners/National Health Logo.png'
-export { default as img9 } from '/public/partners/Sentinal Consulting Logo.png'
-export { default as img10 } from '/public/partners/Sunset Realty Logo.png'
-export { default as img11 } from '/public/partners/Ultimate Gym Logo.png'
-export { default as img12 } from '/public/partners/United Strategy Logo.png'
+export const partnesrsItems = [
+  '/partners/Atlantis Health Logo.png',
+  '/partners/Complete Health Logo - Untitled Page.png',
+  '/partners/Del Mar Strategy Logo.png',
+  '/partners/For Sale Logo.png',
+  '/partners/Happy Home Logo.png',
+  '/partners/Higher Fit Logo - Untitled Page.png',
+  '/partners/InDepth Consulting Logo - Untitled Page.png',
+  '/partners/National Health Logo.png',
+  '/partners/Sentinal Consulting Logo.png',
+  '/partners/Sunset Realty Logo.png',
+  '/partners/Ultimate Gym Logo.png',
+  '/partners/United Strategy Logo.png',
+]
