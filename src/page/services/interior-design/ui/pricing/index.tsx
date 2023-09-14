@@ -1,6 +1,5 @@
 'use client'
 
-import { FC } from 'react'
 import Image from 'next/image'
 
 import Wrap from '@/shared/ui/wrap'
@@ -9,7 +8,7 @@ import PricingTable from '@/page/services/interior-design/ui/pricing/ui/table'
 
 import styles from './style.module.scss'
 
-const Pricing: FC = () => (
+const Pricing = () => (
   <div className={styles.wrap}>
     <Image
       src={'/pages/services/interior-design/table-section-bg.png'}
