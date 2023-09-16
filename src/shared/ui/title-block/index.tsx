@@ -10,7 +10,6 @@ type TProps = {
 }
 
 const TitleBlock: FC<TProps> = ({ title, subtitle, darkTheme }) => {
-  console.log(darkTheme)
   return (
     <div
       className={clsx(styles.container, { [styles.darkTheme]: darkTheme })}
