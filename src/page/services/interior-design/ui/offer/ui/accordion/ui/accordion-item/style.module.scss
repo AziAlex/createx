@@ -1,0 +1,66 @@
+@import '@/mixins';
+@import "@/var";
+
+
+.wrap {
+  margin-bottom: responsive(12px, 26px);
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: $gray-800
+  }
+
+  h3 {
+    text-align: left;
+    margin-bottom: responsive(6px, 12px);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    left: -43px;
+    top: 20px;
+    background-color: $orange;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    left: -43px;
+    top: 20px;
+    transition: all .3s ease;
+    background-color: $orange;
+    transform: rotate(90deg);
+  }
+
+  p {
+    display: block;
+    max-height: 0;
+    transition: max-height ease-out .4s;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
+
+.active {
+  cursor: default;
+
+  &:after, &:before {
+    transform: rotate(0);
+  }
+
+  & > p {
+    max-height: 200px;
+    transition-delay: .3s;
+  }
+}
+
+
+
+
