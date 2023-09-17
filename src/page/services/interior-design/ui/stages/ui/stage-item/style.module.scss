@@ -6,26 +6,25 @@
   width: 25%;
   counter-increment: stage-counter;
   position: relative;
-
+  padding-top: 40px;
 
   &:after {
     content: counter(stage-counter, decimal-leading-zero);
     position: absolute;
-    background-color: $white;
+    top: -45px;
+    left: -12px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 83px;
-    height: 83px;
-    top: -70px;
-    left: 6px;
-    transform: translate(-25%, -20%);
-    border-radius: 50%;
+    background-color: $white;
     color: $gray-400;
     font-size: 46px;
     font-weight: 700;
     line-height: 130%;
-    transition: all .2s ease;
+    transition: all .3s ease;
   }
 
   &:hover:after {
@@ -36,23 +35,22 @@
   &:hover:before {
     content: '';
     position: absolute;
-    background-color: #fff5f3;
     width: 120px;
     height: 120px;
-    top: -80px;
-    left: -4px;
-    transform: translate(-25%, -20%);
+    top: -64px;
+    left: -32px;
     border-radius: 50%;
+    background-color: #fff5f3;
   }
 
   h3 {
     position: relative;
     z-index: 10;
+    margin-bottom: 8px;
     font-size: 20px;
     font-weight: 700;
     line-height: 150%;
     text-align: left;
-    margin-bottom: 8px;
   }
 
   p {
@@ -67,14 +65,14 @@
   @media (max-width: 1024px) {
     width: 100%;
     margin-bottom: 46px;
+    padding-top: 0;
     &:after {
-      left: -75px;
+      left: -95px;
       top: 0;
-      transform: translate(-25%, -10%);
     }
     &:hover:before {
-      top: -2px;
-      left: -84px;
+      top: -20px;
+      left: -115px;
     }
   }
 }

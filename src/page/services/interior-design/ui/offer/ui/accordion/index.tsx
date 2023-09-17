@@ -1,8 +1,10 @@
+'use client'
+
 import { useState } from 'react'
 
+import { accordionData } from '../../lib/accordionData'
 import OfferAccordionItem from './ui/accordion-item'
 
-import { accordionData } from '../../lib/accordionData'
 import styles from './style.module.scss'
 
 const OfferAccordion = () => {
@@ -17,4 +19,5 @@ const OfferAccordion = () => {
     </ul>
   )
 }
+
 export default OfferAccordion

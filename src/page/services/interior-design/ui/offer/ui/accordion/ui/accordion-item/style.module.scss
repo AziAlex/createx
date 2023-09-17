@@ -1,19 +1,18 @@
 @import '@/mixins';
 @import "@/var";
 
-
 .wrap {
-  margin-bottom: responsive(12px, 26px);
+  margin-bottom: responsive(16px, 26px);
   position: relative;
   cursor: pointer;
-
-  &:hover {
-    color: $gray-800
-  }
 
   h3 {
     text-align: left;
     margin-bottom: responsive(6px, 12px);
+
+    &:hover {
+      color: $orange;
+    }
   }
 
   &:before {
@@ -22,7 +21,7 @@
     width: 22px;
     height: 2px;
     left: -43px;
-    top: 20px;
+    top: responsive(7px, 20px);
     background-color: $orange;
   }
 
@@ -32,14 +31,14 @@
     width: 22px;
     height: 2px;
     left: -43px;
-    top: 20px;
-    transition: all .3s ease;
-    background-color: $orange;
+    top: responsive(7px, 20px);
     transform: rotate(90deg);
+    transition: transform .3s ease;
+    background-color: $orange;
+    opacity: 1;
   }
 
   p {
-    display: block;
     max-height: 0;
     transition: max-height ease-out .4s;
     overflow: hidden;
@@ -53,6 +52,20 @@
 
   &:after, &:before {
     transform: rotate(0);
+    transition-delay: .3s;
+  }
+
+  &:after {
+    opacity: 0;
+  }
+
+  h3 {
+    text-align: left;
+    margin-bottom: responsive(6px, 12px);
+
+    &:hover {
+      color: $black;
+    }
   }
 
   & > p {

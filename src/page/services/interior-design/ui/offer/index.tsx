@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 
 import Wrap from '@/shared/ui/wrap'
@@ -11,7 +9,7 @@ const Offer = () => (
   <div className={styles.wrap}>
     <Wrap>
       <div className={styles.offer}>
-        <div className={styles.imgBox}>
+        <div>
           <Image
             src={'/pages/services/interior-design/offer.png'}
             alt='offer'
@@ -20,7 +18,7 @@ const Offer = () => (
             layout='responsive'
           />
         </div>
-        <div className={styles.accordionBox}>
+        <div>
           <h2>We offer</h2>
           <OfferAccordion />
         </div>

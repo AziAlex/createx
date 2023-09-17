@@ -1,6 +1,7 @@
-import styles from './style.module.scss'
-import clsx from 'clsx'
 import { FC } from 'react'
+import clsx from 'clsx'
+
+import styles from './style.module.scss'
 
 interface IOfferAccordionItemProps {
   title: string
@@ -9,13 +10,19 @@ interface IOfferAccordionItemProps {
   setActiveItem: (title: string) => void
 }
 
-const OfferAccordionItem: FC<IOfferAccordionItemProps> = ({ title, description, activeItem, setActiveItem }) => (
-  <li
-    onClick={() => title !== activeItem && setActiveItem(title)}
-    className={clsx(styles.wrap, activeItem === title && styles.active)}>
-    <h3>{title}</h3>
-    <p>{description}</p>
-  </li>
-)
+const OfferAccordionItem: FC<IOfferAccordionItemProps> = ({ title, description, activeItem, setActiveItem }) => {
+  const handleClick = () => {
+    title !== activeItem && setActiveItem(title)
+  }
+
+  return (
+    <li
+      onClick={handleClick}
+      className={clsx(styles.wrap, activeItem === title && styles.active)}>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </li>
+  )
+}
 
 export default OfferAccordionItem

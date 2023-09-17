@@ -16,6 +16,7 @@ const InteriorDesignPage = () => (
     <Pricing />
     <FooterForm />
     <Footer />
+
   </>
 
 )
