@@ -6,6 +6,7 @@ import Pricing from '@/page/services/interior-design/ui/pricing'
 import OurBenefits from './ui/our-benefits'
 import Offer from '@/page/services/interior-design/ui/offer'
 import Stages from '@/page/services/interior-design/ui/stages'
+import RelatedProjects from './ui/related-projects'
 
 const InteriorDesignPage = () => (
   <>
@@ -13,12 +14,11 @@ const InteriorDesignPage = () => (
     <Offer />
     <Stages />
     <OurBenefits />
+    <RelatedProjects />
     <Pricing />
     <FooterForm />
     <Footer />
-
   </>
-
 )
 
 export default InteriorDesignPage
