@@ -14,6 +14,8 @@ const decisions = [
   'Integer ultricies viverra ut enim viverra ut.',
 ]
 
+console.log('enter')
+
 const Constructive = () => (
   <div className={styles.wrap}>
     <Wrap>
