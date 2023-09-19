@@ -15,8 +15,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
-  position: relative;
+  padding: 24px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
 
   .navigation {
     display: flex;
@@ -65,6 +70,7 @@
 
   @media (max-width: 700px) {
     flex-direction: row-reverse;
+    padding: 10px 20px;
   }
 
   .contacts {
