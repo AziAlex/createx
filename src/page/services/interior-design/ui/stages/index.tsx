@@ -9,8 +9,8 @@ const OfferStages = () => (
     <div className={styles.wrap}>
       <h2>That’s how we do it</h2>
       <ol>
-        {stagesData.map((item, i) => (
-          <StageItem key={i} {...item} />
+        {stagesData.map((item, idx) => (
+          <StageItem key={idx} {...item} />
         ))}
       </ol>
     </div>

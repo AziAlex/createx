@@ -13,8 +13,8 @@ const OfferAccordion = () => {
 
   return (
     <ul className={styles.wrap}>
-      {accordionData.map((item, i) => (
-        <OfferAccordionItem {...item} key={i} activeItem={activeItem} setActiveItem={setActiveItem} />
+      {accordionData.map((item, idx) => (
+        <OfferAccordionItem {...item} key={idx} activeItem={activeItem} setActiveItem={setActiveItem} />
       ))}
     </ul>
   )

@@ -1,8 +1,8 @@
 import Pricing from '@/page/services/interior-design/ui/pricing'
-import OurBenefits from './ui/our-benefits'
+import OurBenefits from '@/page/services/interior-design/ui/our-benefits'
 import Offer from '@/page/services/interior-design/ui/offer'
 import Stages from '@/page/services/interior-design/ui/stages'
-import RelatedProjects from './ui/related-projects'
+import RelatedProjects from '@/page/services/interior-design/ui/related-projects'
 import HeaderInfo from '@/widgets/header-info'
 
 const InteriorDesignPage = () => (
