@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import Wrap from '@/shared/ui/wrap'
 import Icon from '@/shared/svg'
@@ -13,8 +12,6 @@ const decisions = [
   'At pharetra libero blandit risus, fringilla sed commodo diam.',
   'Integer ultricies viverra ut enim viverra ut.',
 ]
-
-console.log('enter')
 
 const Constructive = () => (
   <div className={styles.wrap}>
