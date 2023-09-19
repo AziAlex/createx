@@ -1,0 +1,21 @@
+@import '@/mixins';
+@import "@/var";
+
+.wrap {
+  position: relative;
+  padding-left: 44px;
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  .offer {
+    display: flex;
+
+    h2 {
+      margin-bottom: responsive(36px, 60px);
+      text-align: left;
+    }
+  }
+}
+

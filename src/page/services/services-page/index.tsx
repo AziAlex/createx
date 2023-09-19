@@ -1,5 +1,5 @@
-import MainServices from '@/page/services-page/ui/main'
 import HeaderWrap from '@/widgets/header-info'
+import MainServices from '@/page/services/services-page/ui/main'
 
 const ServicePage = () => (
   <>

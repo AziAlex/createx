@@ -1,0 +1,54 @@
+@import '@/mixins';
+@import "@/var";
+
+.wrap {
+  position: relative;
+  padding-top: responsive(36px, 120px);
+  padding-bottom: responsive(24px, 180px);
+
+  .offer {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    min-height: 280px;
+
+    div:first-child {
+      width: responsive(400px, 705px);
+      position: relative;
+
+      img {
+        height: auto;
+      }
+    }
+
+    div:last-child {
+      max-width: 420px;
+    }
+
+    @media (max-width: 1024px) {
+      div:first-child {
+        display: none;
+      }
+      div:last-child {
+        max-width: 100%;
+      }
+    }
+
+    h2 {
+      margin-bottom: responsive(36px, 60px);
+      text-align: left;
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 130%;
+    }
+
+    @media (max-width: 1024px) {
+      h2 {
+        text-align: center;
+      }
+    }
+
+  }
+}
+

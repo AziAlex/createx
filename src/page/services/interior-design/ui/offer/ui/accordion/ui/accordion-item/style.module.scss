@@ -1,0 +1,79 @@
+@import '@/mixins';
+@import "@/var";
+
+.wrap {
+  margin-bottom: responsive(16px, 26px);
+  position: relative;
+  cursor: pointer;
+
+  h3 {
+    text-align: left;
+    margin-bottom: responsive(6px, 12px);
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    left: -43px;
+    top: responsive(7px, 20px);
+    background-color: $orange;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    left: -43px;
+    top: responsive(7px, 20px);
+    transform: rotate(90deg);
+    transition: transform .3s ease;
+    background-color: $orange;
+    opacity: 1;
+  }
+
+  p {
+    max-height: 0;
+    transition: max-height ease-out .4s;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
+
+.active {
+  cursor: default;
+
+  &:after, &:before {
+    transform: rotate(0);
+    transition-delay: .3s;
+  }
+
+  &:after {
+    opacity: 0;
+  }
+
+  h3 {
+    text-align: left;
+    margin-bottom: responsive(6px, 12px);
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  & > p {
+    max-height: 200px;
+    transition-delay: .3s;
+  }
+}
+
+
+
+
