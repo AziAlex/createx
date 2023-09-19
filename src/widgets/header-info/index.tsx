@@ -7,14 +7,13 @@ import styles from './style.module.scss'
 import PageRouter from '@/feature/page-routing'
 
 interface IProps {
-  children: React.ReactNode
   img: string
   title: string
   description: string
   imgWidth: number
 }
 
-const HeaderWrap: FC<IProps> = ({ children, img, title, description, imgWidth }) => (
+const HeaderWrap: FC<IProps> = ({ img, title, description, imgWidth }) => (
   <div className={styles.headerWrap}>
     <Image
       src={img}
@@ -23,8 +22,6 @@ const HeaderWrap: FC<IProps> = ({ children, img, title, description, imgWidth })
       height={600}
       style={{ maxWidth: imgWidth }}
     />
-
-    {children}
     <Wrap>
       <PageRouter />
       <div className={styles.content}>

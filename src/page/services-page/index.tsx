@@ -1,15 +1,15 @@
-import React from 'react'
-import FooterForm from '@/widgets/footer-form'
-import Footer from '@/widgets/footer'
-import HeaderServices from '@/page/services-page/ui/header'
 import MainServices from '@/page/services-page/ui/main'
+import HeaderWrap from '@/widgets/header-info'
 
 const ServicePage = () => (
   <>
-    <HeaderServices />
+    <HeaderWrap
+      imgWidth={975}
+      img='/pages/services/header.png'
+      title='SERVICES'
+      description='If you are looking for a full-service construction company, look to Createx Construction Bureau. We are doing our best to be a partner for all of your construction needs.'
+    />
     <MainServices />
-    <FooterForm />
-    <Footer />
   </>
 )
 
