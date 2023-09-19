@@ -1,5 +1,6 @@
 'use client'
 
+import { FC } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
@@ -10,7 +11,7 @@ import Icon from '@/shared/svg'
 
 import styles from './style.module.scss'
 
-const Header = () => {
+const Header: FC = () => {
   const pathName = usePathname()
 
   return (
