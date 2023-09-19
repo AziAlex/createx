@@ -8,7 +8,7 @@ import OurServices from '@/page/main-page/ui/our-services'
 import ProjectShowcase from '@/page/main-page/ui/project-showcase'
 import SomeFacts from '@/page/main-page/ui/Some-facts-and-figures'
 
-const ManiPage = () => (
+const MainPage = () => (
   <>
     <MainSlider />
     <VideoBlock />
@@ -22,4 +22,4 @@ const ManiPage = () => (
   </>
 )
 
-export default ManiPage
+export default MainPage
