@@ -1,8 +1,9 @@
-import "./style/global.scss"
-import MainPage from "@/page/main-page";
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <MainPage/>
+    <div>Page Main</div>
   )
 }
+
+export default page
