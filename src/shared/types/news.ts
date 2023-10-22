@@ -1,4 +1,4 @@
-type TNews = 'Company News' | 'Innovation' | 'Industry News' | 'Expert Tips' | 'Marketing'
+export type TNews = 'Company News' | 'Innovation' | 'Industry News' | 'Expert Tips' | 'Marketing'
 
 export interface INewsCard {
   id: number

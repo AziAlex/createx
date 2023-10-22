@@ -7,7 +7,6 @@
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid $btn;
-  font-family: 'Ubuntu';
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -50,6 +49,32 @@
     &:hover {
       background-color: $btn-hover;
       border: 1px solid $btn-hover;
+    }
+
+  }
+
+  &.text {
+    color: $gray-600;
+    border: 0;
+    text-transform: none;
+    background-color: transparent;
+
+    &:hover {
+      color: $btn;
+      border: 1px solid $btn-hover;
+      background-color: transparent;
+    }
+  }
+
+  &.active {
+    border: 1px solid $btn;
+    text-transform: none;
+
+    &:hover {
+      color: $btn;
+      border: 1px solid $btn-hover;
+      background-color: transparent;
+      cursor: default;
     }
   }
 

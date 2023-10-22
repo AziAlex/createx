@@ -6,4 +6,6 @@ export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonEleme
   solid?: boolean
   fill?: boolean
   disabled?: boolean
+  text?: boolean
+  active?: boolean
 }

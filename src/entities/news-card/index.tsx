@@ -6,6 +6,7 @@ import { createDate } from '@/shared/util/date'
 import Icon from '@/shared/svg'
 
 import styles from './style.module.scss'
+import clsx from 'clsx'
 
 interface IProps {
   card: INewsCard
@@ -22,14 +23,16 @@ const NewsCard: FC<IProps> = ({ card, minCard }) => (
       <div className={styles.subInfo}>
         <span>{card.type}</span>
         <span className={styles.line}></span>
+        <hr/>
         <span>{createDate(card.date)}</span>
+        <hr/>
         <span className={styles.line}></span>
         <span>
           <Icon name='chat' className={styles.svg} />
           {card.comments} comments
         </span>
       </div>
-      <p className={minCard ? styles.description : ''}>{card.description}</p>
+      <p className={clsx(styles.description, minCard && styles.descriptionMin)}>{card.description}</p>
     </div>
   </div>
 )

@@ -5,7 +5,10 @@
 .card {
   box-shadow: $shadow-small;
   max-width: 705px;
+  max-height: 482px;
   cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
 
   @media (max-width: 1230px) {
     max-width: 705px;
@@ -13,8 +16,8 @@
 
   .img {
     overflow: hidden;
-    max-width: 705px;
-    max-height: 360px;
+    max-width: 600px;
+    max-height: 306px;
 
     img {
       object-fit: cover;
@@ -22,6 +25,7 @@
       height: 100%;
       border-radius: 4px 4px 0 0;
       transition: .25s;
+
 
       @media (max-width: 1230px) {
         max-height: 156px;
@@ -34,6 +38,7 @@
     box-shadow: $shadow-regular;
 
     .img {
+      width: 100%;
       img {
         transform: scale(1.1);
       }
@@ -45,16 +50,32 @@
 
     h4 {
       text-align: left;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    hr {
+      width: 1px;
+      height: 12px;
+      background-color: $gray-800;
+    }
+
+    .description {
+      height: 52px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Устанавливает количество строк, которое нужно отображать */
+      -webkit-box-orient: vertical;
     }
 
     .subInfo {
       display: flex;
       gap: responsive(4px, 12px);
       align-items: center;
-      margin-bottom: responsive(8px, 16px);
+      margin-bottom: responsive(8px, 14px);
       flex-wrap: wrap;
-
 
       span {
         font-size: 14px;
@@ -83,7 +104,7 @@
     }
 
     @media (min-width: 1230px) {
-      .description {
+      .descriptionMin {
         display: none;
       }
     }

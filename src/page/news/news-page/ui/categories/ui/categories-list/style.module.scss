@@ -1,0 +1,26 @@
+@import "@/mixins";
+@import '@/var';
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-between;
+  margin-bottom: responsive(32px, 60px);
+  flex-wrap: wrap;
+  gap: 5px;
+
+  button {
+    width: 100%;
+  }
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 648px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 360px) {
+    grid-template-columns: 1fr;
+  }
+
+}

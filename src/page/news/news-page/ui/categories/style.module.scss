@@ -1,0 +1,11 @@
+@import '@/mixins';
+
+.wrap {
+  padding-top: responsive(30px, 120px);
+  padding-bottom: responsive(40px, 180px);
+
+  h2 {
+    margin-bottom: responsive(20px, 40px);
+  }
+
+}
